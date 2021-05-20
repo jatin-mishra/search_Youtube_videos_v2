@@ -18,7 +18,7 @@ import requests
 
 # Create your views here.
 
-class searchingView(LoginRequiredMixin, APIView):
+class searchingView(APIView):
     def get(self, request, n=None):
         query = request.data.get('query','')
 

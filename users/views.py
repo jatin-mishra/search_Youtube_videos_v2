@@ -6,6 +6,7 @@ from .serializers import UserSerializer
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import User
 import jwt, datetime
+import random
 # Create your views here.
 
 class RegisterView(APIView):
@@ -17,6 +18,22 @@ class RegisterView(APIView):
 
 
 class LoginView(APIView):
+
+
+
+    def generateRandomKey(self, fixed_length=10):
+        allowedchars = 'abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()'
+        startIndex = 0
+        lastIndex = len(allowedchars)-1
+        random_key = ''
+        for _ in range(fixed_length):
+            random_key = random_key + allowedchars[random.randint(startIndex, lastIndex)]
+        return random_key
+
+
+
+
+
     def post(self, request):
         email  = request.data['email']
         password = request.data['password']
@@ -40,20 +57,33 @@ class LoginView(APIView):
         # return token via cookies
         response = Response()
 
-        response.set_cookie(key='jwt',value=token, httponly=True)
+        # generaate a random key that is not present in session
+        key_name = self.generateRandomKey()
+        while key_name in request.session :
+            key_name = self.generateRandomKey()
+
+        # store key=randomkey, value=token
+        request.session[key_name] = token
+
+        # save randomkey on cookie
+        response.set_cookie(key='jwt',value=key_name, httponly=True)
         response.data = {
-            'jwt' : token
+            'jwt' : key_name
         }
         return response
 
 class UserView(LoginRequiredMixin,APIView):
     def get(self, request):
-        token = request.COOKIES.get('jwt')
+        key_name = request.COOKIES.get('jwt')
+
+        if key_name not in request.session:
+            raise AuthenticationFailed('UnAuthenticated!')
 
         if not token:
             raise AuthenticationFailed('UnAuthenticated!')
 
         try:
+            token = request.session[key_name]
             payload = jwt.decode(token, 'secret', algorithms=['HS256'])
         except jwt.ExpiredSignatureError:
             raise AuthenticationFailed('UnAuthenticated')
