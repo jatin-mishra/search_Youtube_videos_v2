@@ -1,0 +1,49 @@
+[2021-05-18 05:46:53,854: INFO/MainProcess] beat: Starting...
+[2021-05-18 05:46:53,856: WARNING/MainProcess] Reset: Timezone changed from 'Asia/New_York' to 'Asia/Kolkata'
+[2021-05-18 05:47:23,872: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:47:53,882: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:48:23,902: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:48:53,923: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:49:23,943: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:49:53,964: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:50:23,986: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:50:53,991: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:51:24,011: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:51:54,032: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:52:24,052: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:52:54,073: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:53:24,094: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:53:54,115: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:54:24,135: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:54:54,151: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:55:24,158: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:55:54,179: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:56:24,197: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:56:54,217: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:57:24,226: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:57:54,246: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:58:24,246: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:58:54,251: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:59:24,255: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 05:59:54,275: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:00:24,296: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:00:54,316: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:01:24,337: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:01:54,356: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:02:24,377: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:02:54,398: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:03:24,418: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:03:54,438: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 06:04:24,456: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 14:53:25,907: INFO/MainProcess] beat: Starting...
+[2021-05-18 14:53:26,146: ERROR/MainProcess] beat: Connection error: Error 111 connecting to localhost:6379. Connection refused.. Trying again in 2.0 seconds...
+[2021-05-18 14:53:28,149: ERROR/MainProcess] beat: Connection error: Error 111 connecting to localhost:6379. Connection refused.. Trying again in 4.0 seconds...
+[2021-05-18 14:53:32,156: ERROR/MainProcess] beat: Connection error: Error 111 connecting to localhost:6379. Connection refused.. Trying again in 6.0 seconds...
+[2021-05-18 14:53:38,165: ERROR/MainProcess] beat: Connection error: Error 111 connecting to localhost:6379. Connection refused.. Trying again in 8.0 seconds...
+[2021-05-18 14:53:46,175: ERROR/MainProcess] beat: Connection error: Error 111 connecting to localhost:6379. Connection refused.. Trying again in 10.0 seconds...
+[2021-05-18 14:53:56,188: ERROR/MainProcess] beat: Connection error: Error 111 connecting to localhost:6379. Connection refused.. Trying again in 12.0 seconds...
+[2021-05-18 14:54:08,203: ERROR/MainProcess] beat: Connection error: Error 111 connecting to localhost:6379. Connection refused.. Trying again in 14.0 seconds...
+[2021-05-18 19:05:18,007: INFO/MainProcess] beat: Starting...
+[2021-05-18 19:05:18,250: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 19:05:48,262: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)
+[2021-05-18 19:06:18,283: INFO/MainProcess] Scheduler: Sending due task add_them_now (searchingApp.tasks.add)

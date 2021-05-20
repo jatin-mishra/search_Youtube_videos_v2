@@ -1,0 +1,178 @@
+[2021-05-18 05:35:08,902: INFO/MainProcess] Connected to redis://localhost:6379//
+[2021-05-18 05:35:08,908: INFO/MainProcess] mingle: searching for neighbors
+[2021-05-18 05:35:09,921: INFO/MainProcess] mingle: all alone
+[2021-05-18 05:35:09,949: WARNING/MainProcess] /home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2021-05-18 05:35:09,949: INFO/MainProcess] celery@Bddeveloper ready.
+[2021-05-18 05:37:55,431: CRITICAL/MainProcess] Unrecoverable error: UnknownTimeZoneError('Asia/New_York')
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/utils/objects.py", line 41, in __get__
+    return obj.__dict__[self.__name__]
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/worker/consumer/consumer.py", line 311, in start
+    blueprint.start(self)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/worker/consumer/consumer.py", line 592, in start
+    c.loop(*c.loop_args())
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/worker/loops.py", line 81, in asynloop
+    next(loop)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/asynchronous/hub.py", line 361, in create_loop
+    cb(*cbargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/transport/redis.py", line 1087, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/transport/redis.py", line 358, in on_readable
+    chan.handlers[type]()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/transport/redis.py", line 748, in _brpop_read
+    self.connection._deliver(loads(bytes_to_str(item)), dest)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/transport/virtual/base.py", line 980, in _deliver
+    callback(message)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/transport/virtual/base.py", line 630, in _callback
+    return callback(message)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/messaging.py", line 620, in _receive_callback
+    return on_m(message) if on_m else self.receive(decoded, message)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/worker/consumer/consumer.py", line 564, in on_task_received
+    callbacks,
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/worker/strategy.py", line 135, in task_message_handler
+    message.body, message.headers, False, app.uses_utc_timezone(),
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/base.py", line 1268, in uses_utc_timezone
+    return self.timezone == timezone.utc
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/kombu/utils/objects.py", line 43, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/base.py", line 1283, in timezone
+    return timezone.get_timezone(conf.timezone)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/utils/time.py", line 130, in get_timezone
+    return _timezone(zone)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/pytz/__init__.py", line 181, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'Asia/New_York'
+[2021-05-18 05:37:56,504: WARNING/MainProcess] Restoring 1 unacknowledged message(s)
+[2021-05-18 05:47:15,843: INFO/MainProcess] Connected to redis://localhost:6379//
+[2021-05-18 05:47:15,852: INFO/MainProcess] mingle: searching for neighbors
+[2021-05-18 05:47:16,866: INFO/MainProcess] mingle: all alone
+[2021-05-18 05:47:16,876: WARNING/MainProcess] /home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2021-05-18 05:47:16,876: INFO/MainProcess] celery@Bddeveloper ready.
+[2021-05-18 05:47:16,887: INFO/MainProcess] Received task: searchingApp.tasks.add[a9d38a17-c164-4e5c-b520-dd2d57c0459a]  
+[2021-05-18 05:47:16,888: INFO/MainProcess] Received task: searchingApp.tasks.add[561f554b-81c6-4bdf-b22d-a0fac66b55ca]  
+[2021-05-18 05:47:16,890: INFO/ForkPoolWorker-7] Task searchingApp.tasks.add[561f554b-81c6-4bdf-b22d-a0fac66b55ca] succeeded in 0.0014985140005592257s: 7
+[2021-05-18 05:47:16,890: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[a9d38a17-c164-4e5c-b520-dd2d57c0459a] succeeded in 0.0016052949995355448s: 7
+[2021-05-18 05:47:23,893: INFO/MainProcess] Received task: searchingApp.tasks.add[c6d2fbb5-19ee-4681-8a82-c7075b71d989]  
+[2021-05-18 05:47:23,894: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c6d2fbb5-19ee-4681-8a82-c7075b71d989] succeeded in 0.0006569980014319299s: 8
+[2021-05-18 05:47:53,887: INFO/MainProcess] Received task: searchingApp.tasks.add[4b8d9cd8-c010-43eb-bd21-d72a2176ff19]  
+[2021-05-18 05:47:53,891: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[4b8d9cd8-c010-43eb-bd21-d72a2176ff19] succeeded in 0.0018448529990564566s: 8
+[2021-05-18 05:48:23,907: INFO/MainProcess] Received task: searchingApp.tasks.add[bd33392f-663c-43ba-b2db-fa1075345bfa]  
+[2021-05-18 05:48:23,911: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[bd33392f-663c-43ba-b2db-fa1075345bfa] succeeded in 0.001606734998858883s: 8
+[2021-05-18 05:48:53,928: INFO/MainProcess] Received task: searchingApp.tasks.add[36569388-0db9-40d5-b2db-aa657f036f6a]  
+[2021-05-18 05:48:53,932: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[36569388-0db9-40d5-b2db-aa657f036f6a] succeeded in 0.001725549000184401s: 8
+[2021-05-18 05:49:23,948: INFO/MainProcess] Received task: searchingApp.tasks.add[b7ae697d-5716-490c-a3df-3467d5ff60dc]  
+[2021-05-18 05:49:23,952: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[b7ae697d-5716-490c-a3df-3467d5ff60dc] succeeded in 0.002052227999229217s: 8
+[2021-05-18 05:49:53,971: INFO/MainProcess] Received task: searchingApp.tasks.add[d944ad02-31da-43a5-ab64-2a18f66c0a85]  
+[2021-05-18 05:49:53,974: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[d944ad02-31da-43a5-ab64-2a18f66c0a85] succeeded in 0.0015686480001022574s: 8
+[2021-05-18 05:50:23,990: INFO/MainProcess] Received task: searchingApp.tasks.add[21f9e417-37f4-418b-a31b-06eda0f2579d]  
+[2021-05-18 05:50:23,991: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[21f9e417-37f4-418b-a31b-06eda0f2579d] succeeded in 0.00043275399912090506s: 8
+[2021-05-18 05:50:53,996: INFO/MainProcess] Received task: searchingApp.tasks.add[5d7691a5-62fb-4bc4-958c-2add2dbc5032]  
+[2021-05-18 05:50:54,000: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[5d7691a5-62fb-4bc4-958c-2add2dbc5032] succeeded in 0.0017103690006479155s: 8
+[2021-05-18 05:51:24,017: INFO/MainProcess] Received task: searchingApp.tasks.add[62627daa-3ab5-4e5f-bfac-8eb64317ee91]  
+[2021-05-18 05:51:24,020: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[62627daa-3ab5-4e5f-bfac-8eb64317ee91] succeeded in 0.0017648459997872123s: 8
+[2021-05-18 05:51:54,037: INFO/MainProcess] Received task: searchingApp.tasks.add[c7e0276a-819c-4295-b40d-d8030b81c371]  
+[2021-05-18 05:51:54,041: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c7e0276a-819c-4295-b40d-d8030b81c371] succeeded in 0.001967472000615089s: 8
+[2021-05-18 05:52:24,057: INFO/MainProcess] Received task: searchingApp.tasks.add[80188a37-4c85-4f9f-99fe-6fe334a2f39e]  
+[2021-05-18 05:52:24,061: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[80188a37-4c85-4f9f-99fe-6fe334a2f39e] succeeded in 0.0016361320012947544s: 8
+[2021-05-18 05:52:54,078: INFO/MainProcess] Received task: searchingApp.tasks.add[15fe5f04-5206-46ed-9095-7b91b0c8999e]  
+[2021-05-18 05:52:54,082: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[15fe5f04-5206-46ed-9095-7b91b0c8999e] succeeded in 0.0016689870008121943s: 8
+[2021-05-18 05:53:24,099: INFO/MainProcess] Received task: searchingApp.tasks.add[667d09a5-498f-4af5-b881-7bb58673afc6]  
+[2021-05-18 05:53:24,103: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[667d09a5-498f-4af5-b881-7bb58673afc6] succeeded in 0.0020419460015546065s: 8
+[2021-05-18 05:53:54,119: INFO/MainProcess] Received task: searchingApp.tasks.add[dd9c36bd-89b4-4ac1-9bad-b03dec26301d]  
+[2021-05-18 05:53:54,123: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[dd9c36bd-89b4-4ac1-9bad-b03dec26301d] succeeded in 0.0017307079997408437s: 8
+[2021-05-18 05:54:24,140: INFO/MainProcess] Received task: searchingApp.tasks.add[bf265c93-7cd9-4983-95f6-1f391cf29bce]  
+[2021-05-18 05:54:24,143: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[bf265c93-7cd9-4983-95f6-1f391cf29bce] succeeded in 0.001634190999538987s: 8
+[2021-05-18 05:54:54,156: INFO/MainProcess] Received task: searchingApp.tasks.add[953c83e8-d755-44e2-9d24-7641aef01190]  
+[2021-05-18 05:54:54,160: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[953c83e8-d755-44e2-9d24-7641aef01190] succeeded in 0.0018104500013578217s: 8
+[2021-05-18 05:55:24,163: INFO/MainProcess] Received task: searchingApp.tasks.add[aa0cce16-a56b-40d3-91d5-819a46b8092c]  
+[2021-05-18 05:55:24,167: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[aa0cce16-a56b-40d3-91d5-819a46b8092c] succeeded in 0.0016442850010207621s: 8
+[2021-05-18 05:55:54,184: INFO/MainProcess] Received task: searchingApp.tasks.add[c2f3d6d6-8143-40cd-af4c-33e691977189]  
+[2021-05-18 05:55:54,188: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c2f3d6d6-8143-40cd-af4c-33e691977189] succeeded in 0.0018257809988426743s: 8
+[2021-05-18 05:56:24,201: INFO/MainProcess] Received task: searchingApp.tasks.add[6003893d-5a93-4bdf-a250-848db931dddf]  
+[2021-05-18 05:56:24,203: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[6003893d-5a93-4bdf-a250-848db931dddf] succeeded in 0.00047954699948604684s: 8
+[2021-05-18 05:56:54,223: INFO/MainProcess] Received task: searchingApp.tasks.add[368dee93-090d-4e81-b90f-8960045e8ec3]  
+[2021-05-18 05:56:54,226: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[368dee93-090d-4e81-b90f-8960045e8ec3] succeeded in 0.0018822260008164449s: 8
+[2021-05-18 05:57:24,231: INFO/MainProcess] Received task: searchingApp.tasks.add[1f6a9afd-d5a8-4425-95c8-e055dadfb38d]  
+[2021-05-18 05:57:24,235: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[1f6a9afd-d5a8-4425-95c8-e055dadfb38d] succeeded in 0.0014436590008699568s: 8
+[2021-05-18 05:57:54,251: INFO/MainProcess] Received task: searchingApp.tasks.add[6c3f3362-db21-4535-96e2-378c85fa15b0]  
+[2021-05-18 05:57:54,255: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[6c3f3362-db21-4535-96e2-378c85fa15b0] succeeded in 0.0016068010008893907s: 8
+[2021-05-18 05:58:24,248: INFO/MainProcess] Received task: searchingApp.tasks.add[2b5177ae-413e-4d84-8c04-2d650637b823]  
+[2021-05-18 05:58:24,249: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[2b5177ae-413e-4d84-8c04-2d650637b823] succeeded in 0.0005571540004893905s: 8
+[2021-05-18 05:58:54,257: INFO/MainProcess] Received task: searchingApp.tasks.add[e8bae48c-0af1-4df4-8cbf-ffc168fe829b]  
+[2021-05-18 05:58:54,260: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[e8bae48c-0af1-4df4-8cbf-ffc168fe829b] succeeded in 0.001778719000867568s: 8
+[2021-05-18 05:59:24,256: INFO/MainProcess] Received task: searchingApp.tasks.add[5520cf87-b52e-42be-bcbd-6f59e70a7775]  
+[2021-05-18 05:59:24,258: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[5520cf87-b52e-42be-bcbd-6f59e70a7775] succeeded in 0.0005772029999207007s: 8
+[2021-05-18 05:59:54,281: INFO/MainProcess] Received task: searchingApp.tasks.add[f25d47e0-a3c5-440b-be2d-233fb1b5124c]  
+[2021-05-18 05:59:54,284: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[f25d47e0-a3c5-440b-be2d-233fb1b5124c] succeeded in 0.0017514030005258974s: 8
+[2021-05-18 06:00:24,301: INFO/MainProcess] Received task: searchingApp.tasks.add[e9ef80f0-70b8-4c6b-8f1a-4bad288ebd09]  
+[2021-05-18 06:00:24,305: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[e9ef80f0-70b8-4c6b-8f1a-4bad288ebd09] succeeded in 0.002037189000475337s: 8
+[2021-05-18 06:00:54,322: INFO/MainProcess] Received task: searchingApp.tasks.add[da1a3248-b688-4863-a8cd-bf6e8587cae9]  
+[2021-05-18 06:00:54,325: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[da1a3248-b688-4863-a8cd-bf6e8587cae9] succeeded in 0.00172501399902103s: 8
+[2021-05-18 06:01:24,342: INFO/MainProcess] Received task: searchingApp.tasks.add[91acb4e4-85c0-47bc-b98a-9139c4083867]  
+[2021-05-18 06:01:24,346: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[91acb4e4-85c0-47bc-b98a-9139c4083867] succeeded in 0.0017897910001920536s: 8
+[2021-05-18 06:01:54,361: INFO/MainProcess] Received task: searchingApp.tasks.add[bd145f66-925c-4fda-94cc-81fc3916e751]  
+[2021-05-18 06:01:54,366: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[bd145f66-925c-4fda-94cc-81fc3916e751] succeeded in 0.002507342000171775s: 8
+[2021-05-18 06:02:24,382: INFO/MainProcess] Received task: searchingApp.tasks.add[821ce260-7f40-4482-af62-4bc3f14e109e]  
+[2021-05-18 06:02:24,383: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[821ce260-7f40-4482-af62-4bc3f14e109e] succeeded in 0.0005888789983146125s: 8
+[2021-05-18 06:02:54,401: INFO/MainProcess] Received task: searchingApp.tasks.add[833dd991-1370-4ba4-8653-cfc364ed6119]  
+[2021-05-18 06:02:54,403: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[833dd991-1370-4ba4-8653-cfc364ed6119] succeeded in 0.0013131649993738392s: 8
+[2021-05-18 06:03:24,421: INFO/MainProcess] Received task: searchingApp.tasks.add[c8151f33-294c-43db-b398-4c4ac63833b6]  
+[2021-05-18 06:03:24,422: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c8151f33-294c-43db-b398-4c4ac63833b6] succeeded in 0.0007169710006564856s: 8
+[2021-05-18 06:03:54,443: INFO/MainProcess] Received task: searchingApp.tasks.add[f5de9046-18dc-4806-9d5b-19e8cd09f3ef]  
+[2021-05-18 06:03:54,444: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[f5de9046-18dc-4806-9d5b-19e8cd09f3ef] succeeded in 0.0004478110004129121s: 8
+[2021-05-18 06:04:24,461: INFO/MainProcess] Received task: searchingApp.tasks.add[a2dc267d-6796-43b5-b260-4af73b1259a8]  
+[2021-05-18 06:04:24,464: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[a2dc267d-6796-43b5-b260-4af73b1259a8] succeeded in 0.001576767999722506s: 8
+[2021-05-18 14:53:30,316: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2021-05-18 14:53:32,321: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2021-05-18 14:53:36,327: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2021-05-18 14:53:42,336: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+[2021-05-18 14:53:50,348: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+[2021-05-18 14:54:00,360: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+[2021-05-18 19:05:35,344: INFO/MainProcess] Connected to redis://localhost:6379//
+[2021-05-18 19:05:35,354: INFO/MainProcess] mingle: searching for neighbors
+[2021-05-18 19:05:36,374: INFO/MainProcess] mingle: all alone
+[2021-05-18 19:05:36,398: WARNING/MainProcess] /home/jm1shra/.local/lib/python3.6/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2021-05-18 19:05:36,398: INFO/MainProcess] celery@Bddeveloper ready.
+[2021-05-18 19:05:36,416: INFO/MainProcess] Received task: searchingApp.tasks.add[80eaf5f0-9b0f-42d9-9a24-4dc88cb11acf]  
+[2021-05-18 19:05:36,418: WARNING/ForkPoolWorker-6] 8
+[2021-05-18 19:05:36,421: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[80eaf5f0-9b0f-42d9-9a24-4dc88cb11acf] succeeded in 0.0034159460010414477s: 8
+[2021-05-18 19:05:48,267: INFO/MainProcess] Received task: searchingApp.tasks.add[6c99db21-c874-4b35-8e29-fc4ef03fa2ff]  
+[2021-05-18 19:05:48,270: WARNING/ForkPoolWorker-6] 8
+[2021-05-18 19:05:48,272: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[6c99db21-c874-4b35-8e29-fc4ef03fa2ff] succeeded in 0.002829514996847138s: 8
+[2021-05-18 19:06:18,289: INFO/MainProcess] Received task: searchingApp.tasks.add[892aabc7-1ce5-4178-bcbd-73ffc02d0c4d]  
+[2021-05-18 19:06:18,291: WARNING/ForkPoolWorker-6] 8
+[2021-05-18 19:06:18,292: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[892aabc7-1ce5-4178-bcbd-73ffc02d0c4d] succeeded in 0.0022048010032449383s: 8
