@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'youtubeRecords.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'YoutubeData',
+        'NAME': 'SecondDataBase',
     }
 }
 
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -137,12 +137,11 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = 'users.User'
+# AUTH_USER_MODEL = 'users.User'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
 YOUTUBE_DATA_API_KEY = "AIzaSyBo5sB3_ywHbR8jZ5Gy17qqZwAmlmLMzDA"
 
-LOGIN_REDIRECT_URL = 'user'
-LOGIN_URL = 'login'
+

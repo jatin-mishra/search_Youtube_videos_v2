@@ -6,6 +6,8 @@ from django.utils.deprecation import MiddlewareMixin
 from django.utils.functional import SimpleLazyObject
 from rest_framework.exceptions import AuthenticationFailed
 import jwt
+
+from .TokenManager import getValue
 from django.contrib.auth.middleware import AuthenticationMiddleware
 
 
@@ -29,26 +31,23 @@ class AuthenticateMiddleware(AuthenticationMiddleware):
         
         request.user = SimpleLazyObject(lambda: get_user(request))
         
-        authentication_paths = ['/api/login', '/api/register', '/api/logout' ]
-        if request.path in authentication_paths:
+        authentication_paths = ['/api/login', '/api/register', '/api/logout', '/api/refresh' ]
+
+        print(f'path is {request.path}')
+        if request.path in authentication_paths or 'admin' in request.path:
+            print('allowed from middleware')
             return None
 
         # if request.user.is_authenticated():
         key_name = request.COOKIES.get('jwt')
-        if key_name not in request.session:
-            raise AuthenticationFailed('No token in Session, login Again')
+        secret_key = getValue(key_name + "_secret")
 
-        token = request.session[key_name]
-        # print(request.path)
-        # print(request.method)
-        # print(request._get_scheme())
-        # for x in request.session.keys():
-        #     print(x)
+        token = getValue(key_name + "_access")
         if not token: 
             print('no token from middleware')
             raise AuthenticationFailed('UnAuthenticated! Login Again!')
         try:
-            payload = jwt.decode(token, 'secret', algorithms=['HS256'])
+            payload = jwt.decode(token, secret_key, algorithms=['HS256'])
         except jwt.ExpiredSignatureError:
             print('expired token middleware')
             raise AuthenticationFailed('UnAuthenticated! Session has been expired Login Again Please')

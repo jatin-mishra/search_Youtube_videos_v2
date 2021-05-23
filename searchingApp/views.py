@@ -8,7 +8,7 @@ from django.http import JsonResponse
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 import datetime
-
+# import 
 from django.conf import settings
 from django.http import HttpResponse
 # from rest_framework.parsers import JSONParser
@@ -33,7 +33,7 @@ class searchingDefaultView(APIView):
             all_objects = []
             for videoid in alldata:
                 if YoutubeData.objects.filter(video_id=videoid).exists():
-                    video_instance = YoutubeData(video_id=videoid,published_date=alldata[videoid]['published_at'], title=alldata[videoid]['title'], description=alldata[videoid]['description'], actual_link=alldata[videoid]['url'])
+                    video_instance = YoutubeData(video_id=videoid,published_date=alldata[videoid]['published_at'].date(), title=alldata[videoid]['title'], description=alldata[videoid]['description'], actual_link=alldata[videoid]['url'])
                     all_objects.append(video_instance)
             serializer = YoutubeDataSerializer(all_objects, many=True)
         else:
