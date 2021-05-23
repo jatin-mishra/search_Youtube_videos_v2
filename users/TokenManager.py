@@ -23,3 +23,5 @@ def getValue(key):
 def checkForExistence(key):
     return r.exists(key)
 
+def scheduleExpire(key, time):
+    r.expire(key,time)

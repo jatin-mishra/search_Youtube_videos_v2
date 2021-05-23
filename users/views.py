@@ -10,7 +10,7 @@ import random
 import uuid
 import hashlib
 
-from .TokenManager import setValue, getValue, checkForExistence
+from .TokenManager import setValue, getValue, checkForExistence, scheduleExpire
 from rest_framework.parsers import JSONParser
  
 
@@ -100,11 +100,12 @@ class LoginView(APIView):
             key_name = generateRandomKey()
 
 
+        # adding access token and secret key into redis
         access_key = key_name + "_access"
         setValue(access_key, access_token, ACCESS_AGE_MINUTES*60)
         setValue(key_name + "_secret", secret_key, REFRESH_AGE_MINUTES*60)
 
-
+        # expiry for refreshtoken cookie
         expiry = datetime.datetime.strftime( datetime.datetime.utcnow() + datetime.timedelta(minutes=REFRESH_AGE_MINUTES) ,"%a, %d-%b-%Y %H:%M:%S GMT")
 
 
@@ -137,6 +138,11 @@ class RefreshToken(APIView):
 class LogoutView(APIView):
     def post(self, request):
         response = Response()
+        key_name = request.COOKIES.get('jwt')
+
+        scheduleExpire(key_name + "_secret",0)
+        scheduleExpire(key_name + "_access",0)
+
         response.delete_cookie('jwt')
         response.delete_cookie('refresh')
         response.data = {
