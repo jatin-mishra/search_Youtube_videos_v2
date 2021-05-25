@@ -56,19 +56,24 @@ class RegisterView(APIView):
     def post(self, request):
         data = request.data
         password = data.get('password','')
-        if not password:
-            return Response({ "message" : "Please enter your password"})
+        # if not password :
+        #     return Response({ "message" : "Please enter your password", status=status.HTTP_203_NON_AUTHORITATIVE_INFORMATION})
         
-        data['password'] = hash_password(password)
-        usermodel = User(name=data['name'], email=data['email'], password=data['password'])
-        serializer = UserSerializer(data=data)
-        if serializer.is_valid():
-            serializer.save()
-            final_data = serializer.data
-            final_data['password'] = '*********************'
-            return  Response(final_data)
-        else:
-            return Response({"error" : "not valid"})
+        # if not data.get('email'):
+            # return Response({ "message" : "Please enter your email", status=status.HTTP_203_NON_AUTHORITATIVE_INFORMATION})
+        if password and data.get('email') and data.get('name'):
+            data['password'] = hash_password(password)
+            usermodel = User(name=data['name'], email=data['email'], password=data['password'])
+            serializer = UserSerializer(data=data)
+            if serializer.is_valid():
+                serializer.save()
+                final_data = serializer.data
+                final_data['password'] = '*********************'
+                return  Response(final_data)
+            else:
+                return Response({"error" : "not valid"})
+        return Response({ "message" : "Missing Values, check username, password or email!! "}, status=status.HTTP_203_NON_AUTHORITATIVE_INFORMATION)
+        
 
 
 class LoginView(APIView):

@@ -2048,3 +2048,589 @@ django.core.exceptions.ValidationError: ["'2021-05-25T00:00:00' value has an inv
 [2021-05-25 15:38:42,951: INFO/MainProcess] Received task: searchingApp.tasks.add[90e4072e-6720-4005-9e8e-eea1f2181870]  
 [2021-05-25 15:38:42,952: WARNING/ForkPoolWorker-6] 8
 [2021-05-25 15:38:42,953: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[90e4072e-6720-4005-9e8e-eea1f2181870] succeeded in 0.0007161960020312108s: 8
+[2021-05-25 15:39:12,975: INFO/MainProcess] Received task: searchingApp.tasks.add[75804b48-8e91-4469-8ec5-748da0be5687]  
+[2021-05-25 15:39:12,977: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:39:12,979: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[75804b48-8e91-4469-8ec5-748da0be5687] succeeded in 0.0019891010015271604s: 8
+[2021-05-25 15:39:42,995: INFO/MainProcess] Received task: searchingApp.tasks.add[19dc7668-39e0-4008-831e-f68f7765b899]  
+[2021-05-25 15:39:42,997: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:39:42,998: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[19dc7668-39e0-4008-831e-f68f7765b899] succeeded in 0.0009239690007234458s: 8
+[2021-05-25 15:40:13,013: INFO/MainProcess] Received task: searchingApp.tasks.add[bac52573-0c3a-405f-90eb-abca62911da2]  
+[2021-05-25 15:40:13,016: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:40:13,018: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[bac52573-0c3a-405f-90eb-abca62911da2] succeeded in 0.0022995539984549396s: 8
+[2021-05-25 15:40:43,015: INFO/MainProcess] Received task: searchingApp.tasks.add[2bb9a30e-33d5-4697-88db-b19273e0c39a]  
+[2021-05-25 15:40:43,017: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:40:43,020: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[2bb9a30e-33d5-4697-88db-b19273e0c39a] succeeded in 0.0031117100006667897s: 8
+[2021-05-25 15:41:13,035: INFO/MainProcess] Received task: searchingApp.tasks.add[f0b9ef1f-9af6-4815-914c-8343d4b98c1e]  
+[2021-05-25 15:41:13,035: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:41:13,036: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[f0b9ef1f-9af6-4815-914c-8343d4b98c1e] succeeded in 0.0006582249989151023s: 8
+[2021-05-25 15:41:43,055: INFO/MainProcess] Received task: searchingApp.tasks.add[48b1ddd2-13ac-4ddb-8213-7776233efec1]  
+[2021-05-25 15:41:43,057: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:41:43,059: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[48b1ddd2-13ac-4ddb-8213-7776233efec1] succeeded in 0.002373739000177011s: 8
+[2021-05-25 15:42:13,069: INFO/MainProcess] Received task: searchingApp.tasks.add[a2d1a091-c71d-4ffa-bcd1-fd5e4c3900be]  
+[2021-05-25 15:42:13,071: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:42:13,073: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[a2d1a091-c71d-4ffa-bcd1-fd5e4c3900be] succeeded in 0.00212615599957644s: 8
+[2021-05-25 15:42:43,090: INFO/MainProcess] Received task: searchingApp.tasks.add[b6f93f6b-3df2-4e75-b8bb-8784ca558059]  
+[2021-05-25 15:42:43,092: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:42:43,094: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[b6f93f6b-3df2-4e75-b8bb-8784ca558059] succeeded in 0.002348264002648648s: 8
+[2021-05-25 15:43:13,110: INFO/MainProcess] Received task: searchingApp.tasks.add[822728c2-b30c-4001-9a3b-6c08d6daf7eb]  
+[2021-05-25 15:43:13,113: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:43:13,114: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[822728c2-b30c-4001-9a3b-6c08d6daf7eb] succeeded in 0.001990757999010384s: 8
+[2021-05-25 15:43:43,131: INFO/MainProcess] Received task: searchingApp.tasks.add[b931aa6d-dae2-42a5-aec0-a49784f066f3]  
+[2021-05-25 15:43:43,133: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:43:43,134: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[b931aa6d-dae2-42a5-aec0-a49784f066f3] succeeded in 0.0019535169994924217s: 8
+[2021-05-25 15:44:13,152: INFO/MainProcess] Received task: searchingApp.tasks.add[7993bc11-8ceb-4745-bf6f-e1500a0535bf]  
+[2021-05-25 15:44:13,153: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:44:13,153: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[7993bc11-8ceb-4745-bf6f-e1500a0535bf] succeeded in 0.0007684809970669448s: 8
+[2021-05-25 15:44:43,173: INFO/MainProcess] Received task: searchingApp.tasks.add[8d446e95-eb15-4db3-a61c-b91284a37bea]  
+[2021-05-25 15:44:43,175: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:44:43,176: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[8d446e95-eb15-4db3-a61c-b91284a37bea] succeeded in 0.0020883500001218636s: 8
+[2021-05-25 15:45:13,192: INFO/MainProcess] Received task: searchingApp.tasks.add[ff7bb6a0-0ba5-465c-8936-ef26d186c205]  
+[2021-05-25 15:45:13,193: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:45:13,195: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[ff7bb6a0-0ba5-465c-8936-ef26d186c205] succeeded in 0.0019238560016674455s: 8
+[2021-05-25 15:45:43,197: INFO/MainProcess] Received task: searchingApp.tasks.add[000d635c-881e-4607-89c3-efca6b7dd242]  
+[2021-05-25 15:45:43,199: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 15:45:43,200: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[000d635c-881e-4607-89c3-efca6b7dd242] succeeded in 0.0015029700007289648s: 8
+[2021-05-25 15:46:32,659: INFO/MainProcess] Connected to redis://localhost:6379//
+[2021-05-25 15:46:32,668: INFO/MainProcess] mingle: searching for neighbors
+[2021-05-25 15:46:33,682: INFO/MainProcess] mingle: all alone
+[2021-05-25 15:46:33,707: WARNING/MainProcess] /home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2021-05-25 15:46:33,707: INFO/MainProcess] celery@Bddeveloper ready.
+[2021-05-25 15:46:45,695: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[a0a46db7-9e43-46aa-b972-b9842e2ccd7f]  
+[2021-05-25 15:46:46,508: WARNING/ForkPoolWorker-6] {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.com/vi/aN2r_bFS7sw/hqdefault.jpg'}, 'query': 'AI tutorial', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:46:46,509: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[9d82ea30-117c-4611-b0e3-1eecf8be758a]  
+[2021-05-25 15:46:46,510: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 15:46:46,510: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 15:46:46,524: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[a0a46db7-9e43-46aa-b972-b9842e2ccd7f] succeeded in 0.8278004639978462s: {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.c...', ...}
+[2021-05-25 15:46:46,532: WARNING/ForkPoolWorker-7] video done
+[2021-05-25 15:46:46,551: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[9d82ea30-117c-4611-b0e3-1eecf8be758a] raised unexpected: AttributeError("'queryModel' object has no attribute 'update'")
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 63, in insert_into_database
+    query_object.update()
+AttributeError: 'queryModel' object has no attribute 'update'
+[2021-05-25 15:50:20,354: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[66c83df4-aef8-4962-9955-e17a4899f70d]  
+[2021-05-25 15:50:21,368: WARNING/ForkPoolWorker-6] {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.com/vi/aN2r_bFS7sw/hqdefault.jpg'}, 'query': 'AI tutorial', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:50:21,369: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[2aac6343-73b9-40f7-88fb-51b5601697df]  
+[2021-05-25 15:50:21,369: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[66c83df4-aef8-4962-9955-e17a4899f70d] succeeded in 1.0148434279981302s: {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.c...', ...}
+[2021-05-25 15:50:21,370: WARNING/ForkPoolWorker-6] time to insert
+[2021-05-25 15:50:21,370: WARNING/ForkPoolWorker-6] type is : <class 'dict'>
+[2021-05-25 15:50:21,391: WARNING/ForkPoolWorker-6] video done
+[2021-05-25 15:50:21,398: ERROR/ForkPoolWorker-6] Task searchingApp.tasks.insert_into_database[2aac6343-73b9-40f7-88fb-51b5601697df] raised unexpected: AttributeError("'queryModel' object has no attribute 'update'")
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 63, in insert_into_database
+    query_object.update()
+AttributeError: 'queryModel' object has no attribute 'update'
+[2021-05-25 15:50:42,995: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[0befe530-4db3-44f1-8d39-d3bf07a608db]  
+[2021-05-25 15:50:43,605: WARNING/ForkPoolWorker-6] {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.com/vi/aN2r_bFS7sw/hqdefault.jpg'}, 'query': 'AI tutorial', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:50:43,607: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[ea625095-ca07-4eb9-98ec-393cd7bca76a]  
+[2021-05-25 15:50:43,608: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[0befe530-4db3-44f1-8d39-d3bf07a608db] succeeded in 0.6120783149999625s: {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.c...', ...}
+[2021-05-25 15:50:43,610: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 15:50:43,610: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 15:50:43,628: WARNING/ForkPoolWorker-7] video done
+[2021-05-25 15:50:43,634: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[ea625095-ca07-4eb9-98ec-393cd7bca76a] raised unexpected: AttributeError("'queryModel' object has no attribute 'update'")
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 63, in insert_into_database
+    query_object.update()
+AttributeError: 'queryModel' object has no attribute 'update'
+[2021-05-25 15:50:45,242: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[4381f739-aa0e-4354-97be-94a16029793b]  
+[2021-05-25 15:50:45,884: WARNING/ForkPoolWorker-6] {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.com/vi/aN2r_bFS7sw/hqdefault.jpg'}, 'query': 'AI tutorial', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:50:45,884: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[64946e29-38ec-44ad-9a2b-90bccf680887]  
+[2021-05-25 15:50:45,885: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[4381f739-aa0e-4354-97be-94a16029793b] succeeded in 0.6416805750013737s: {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.c...', ...}
+[2021-05-25 15:50:45,885: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 15:50:45,885: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 15:50:45,901: WARNING/ForkPoolWorker-7] video done
+[2021-05-25 15:50:45,907: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[64946e29-38ec-44ad-9a2b-90bccf680887] raised unexpected: AttributeError("'queryModel' object has no attribute 'update'")
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 63, in insert_into_database
+    query_object.update()
+AttributeError: 'queryModel' object has no attribute 'update'
+[2021-05-25 15:50:46,440: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[bafc0c9f-beae-42ca-a356-42fe396eaf74]  
+[2021-05-25 15:50:47,465: WARNING/ForkPoolWorker-6] {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.com/vi/aN2r_bFS7sw/hqdefault.jpg'}, 'query': 'AI tutorial', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:50:47,467: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[b8e9bba9-4db6-4300-a958-91d03ed43ac7]  
+[2021-05-25 15:50:47,468: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[bafc0c9f-beae-42ca-a356-42fe396eaf74] succeeded in 1.0265153479995206s: {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.c...', ...}
+[2021-05-25 15:50:47,470: WARNING/ForkPoolWorker-6] time to insert
+[2021-05-25 15:50:47,470: WARNING/ForkPoolWorker-6] type is : <class 'dict'>
+[2021-05-25 15:50:47,487: WARNING/ForkPoolWorker-6] video done
+[2021-05-25 15:50:47,493: ERROR/ForkPoolWorker-6] Task searchingApp.tasks.insert_into_database[b8e9bba9-4db6-4300-a958-91d03ed43ac7] raised unexpected: AttributeError("'queryModel' object has no attribute 'update'")
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 63, in insert_into_database
+    query_object.update()
+AttributeError: 'queryModel' object has no attribute 'update'
+[2021-05-25 15:50:47,931: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[0ed4ed16-7473-4926-9b45-49fa4b18ce83]  
+[2021-05-25 15:50:48,825: WARNING/ForkPoolWorker-6] {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.com/vi/aN2r_bFS7sw/hqdefault.jpg'}, 'query': 'AI tutorial', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:50:48,827: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[74890f28-4a51-4be9-bd59-6772b7fae2e6]  
+[2021-05-25 15:50:48,828: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[0ed4ed16-7473-4926-9b45-49fa4b18ce83] succeeded in 0.8946559959986189s: {'fVpAxF7pBlU': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'FULL STACK DATA SCIENCE-AI tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST', 'description': 'Full Stack Data Science-AI, Machine Learning & Deep Learning Program tutorials || Demo - 2 || by Mrs. Sasmitha on 25-05-2021 @9AM IST ...', 'url': 'https://i.ytimg.com/vi/fVpAxF7pBlU/hqdefault.jpg'}, 'Pu6OhRBAols': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'L9 - What is Logic in AI? | Artificial Intelligence Tutorial 2021', 'description': 'Lecture No 9, In This Video, we will learn what is logic in Artificial intelligence? This Virtual University video on "Artificial Intelligence" will provide you with a ...', 'url': 'https://i.ytimg.com/vi/Pu6OhRBAols/hqdefault.jpg'}, 'aN2r_bFS7sw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Quick Godot Tutorial then UE4 AI Tutorial', 'description': 'Learning a bit of Godot, then UE4 AI tutorial for a portfolio piece.', 'url': 'https://i.ytimg.c...', ...}
+[2021-05-25 15:50:48,829: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 15:50:48,829: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 15:50:48,874: WARNING/ForkPoolWorker-7] video done
+[2021-05-25 15:50:48,882: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[74890f28-4a51-4be9-bd59-6772b7fae2e6] raised unexpected: AttributeError("'queryModel' object has no attribute 'update'")
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 63, in insert_into_database
+    query_object.update()
+AttributeError: 'queryModel' object has no attribute 'update'
+[2021-05-25 15:51:41,902: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[9eb8f604-e584-43a1-b632-59afe4755ceb]  
+[2021-05-25 15:51:42,599: WARNING/ForkPoolWorker-6] {'ApwJCx7Uuls': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Nose to identify Smells using Machine Learning', 'description': 'Artificial Nose to identify Smells using Machine Learning Inspired by #Covid - induced #smell loss Benjamin Cabé, Principal programmer at Microsoft created a ...', 'url': 'https://i.ytimg.com/vi/ApwJCx7Uuls/hqdefault.jpg'}, 'cIEf1G8ny7I': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Python &amp; Computer Vision - Day-2 | Deep Learning Master Class 5 Day webinar', 'description': 'Artificial Intelligence Internship: https://www.instamojo.com/pantechsolutions/ai-master-class-using-python/?discount=season3 Machine Learning Internship: ...', 'url': 'https://i.ytimg.com/vi/cIEf1G8ny7I/hqdefault_live.jpg'}, 'ov12nDviSg0': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Day 2 Afternoon Session Machine Learning and Artificial Intelligence in Data Science  Phase-2', 'description': '', 'url': 'https://i.ytimg.com/vi/ov12nDviSg0/hqdefault_live.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:51:42,601: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[e30eec6b-3738-4d9c-9732-9ae66bf3afbf]  
+[2021-05-25 15:51:42,602: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[9eb8f604-e584-43a1-b632-59afe4755ceb] succeeded in 0.699561352001183s: {'ApwJCx7Uuls': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Nose to identify Smells using Machine Learning', 'description': 'Artificial Nose to identify Smells using Machine Learning Inspired by #Covid - induced #smell loss Benjamin Cabé, Principal programmer at Microsoft created a ...', 'url': 'https://i.ytimg.com/vi/ApwJCx7Uuls/hqdefault.jpg'}, 'cIEf1G8ny7I': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Python &amp; Computer Vision - Day-2 | Deep Learning Master Class 5 Day webinar', 'description': 'Artificial Intelligence Internship: https://www.instamojo.com/pantechsolutions/ai-master-class-using-python/?discount=season3 Machine Learning Internship: ...', 'url': 'https://i.ytimg.com/vi/cIEf1G8ny7I/hqdefault_live.jpg'}, 'ov12nDviSg0': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Day 2 Afternoon Session Machine Learning and Artificial Intelligence in Data Science  Phase-2', 'description': '', 'url': 'https://i.ytimg.com/vi/ov12nDviSg0/hq...', ...}
+[2021-05-25 15:51:42,603: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 15:51:42,603: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 15:51:42,632: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[e30eec6b-3738-4d9c-9732-9ae66bf3afbf] raised unexpected: ValidationError(["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."])
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 52, in insert_into_database
+    video_instance.save()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 851, in _save_table
+    forced_update)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1469, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1127, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1435, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 793, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1279, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1274, in get_prep_value
+    return self.to_python(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1249, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."]
+[2021-05-25 15:51:46,862: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[1864e9a5-7733-4ec3-9a81-3da62c360bee]  
+[2021-05-25 15:51:47,704: WARNING/ForkPoolWorker-6] {'ApwJCx7Uuls': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Nose to identify Smells using Machine Learning', 'description': 'Artificial Nose to identify Smells using Machine Learning Inspired by #Covid - induced #smell loss Benjamin Cabé, Principal programmer at Microsoft created a ...', 'url': 'https://i.ytimg.com/vi/ApwJCx7Uuls/hqdefault.jpg'}, 'cIEf1G8ny7I': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Python &amp; Computer Vision - Day-2 | Deep Learning Master Class 5 Day webinar', 'description': 'Artificial Intelligence Internship: https://www.instamojo.com/pantechsolutions/ai-master-class-using-python/?discount=season3 Machine Learning Internship: ...', 'url': 'https://i.ytimg.com/vi/cIEf1G8ny7I/hqdefault_live.jpg'}, 'ov12nDviSg0': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Day 2 Afternoon Session Machine Learning and Artificial Intelligence in Data Science  Phase-2', 'description': '', 'url': 'https://i.ytimg.com/vi/ov12nDviSg0/hqdefault_live.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:51:47,705: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[8342142c-ded2-4e52-b003-8d203e5626cf]  
+[2021-05-25 15:51:47,706: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[1864e9a5-7733-4ec3-9a81-3da62c360bee] succeeded in 0.8442352880010731s: {'ApwJCx7Uuls': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Nose to identify Smells using Machine Learning', 'description': 'Artificial Nose to identify Smells using Machine Learning Inspired by #Covid - induced #smell loss Benjamin Cabé, Principal programmer at Microsoft created a ...', 'url': 'https://i.ytimg.com/vi/ApwJCx7Uuls/hqdefault.jpg'}, 'cIEf1G8ny7I': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Python &amp; Computer Vision - Day-2 | Deep Learning Master Class 5 Day webinar', 'description': 'Artificial Intelligence Internship: https://www.instamojo.com/pantechsolutions/ai-master-class-using-python/?discount=season3 Machine Learning Internship: ...', 'url': 'https://i.ytimg.com/vi/cIEf1G8ny7I/hqdefault_live.jpg'}, 'ov12nDviSg0': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Day 2 Afternoon Session Machine Learning and Artificial Intelligence in Data Science  Phase-2', 'description': '', 'url': 'https://i.ytimg.com/vi/ov12nDviSg0/hq...', ...}
+[2021-05-25 15:51:47,707: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 15:51:47,708: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 15:51:47,716: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[8342142c-ded2-4e52-b003-8d203e5626cf] raised unexpected: ValidationError(["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."])
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 52, in insert_into_database
+    video_instance.save()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 851, in _save_table
+    forced_update)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1469, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1127, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1435, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 793, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1279, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1274, in get_prep_value
+    return self.to_python(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1249, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."]
+[2021-05-25 15:51:48,341: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[da3a2c1c-8438-4994-a06b-36dc8849107b]  
+[2021-05-25 15:51:49,149: WARNING/ForkPoolWorker-6] {'ApwJCx7Uuls': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Nose to identify Smells using Machine Learning', 'description': 'Artificial Nose to identify Smells using Machine Learning Inspired by #Covid - induced #smell loss Benjamin Cabé, Principal programmer at Microsoft created a ...', 'url': 'https://i.ytimg.com/vi/ApwJCx7Uuls/hqdefault.jpg'}, 'cIEf1G8ny7I': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Python &amp; Computer Vision - Day-2 | Deep Learning Master Class 5 Day webinar', 'description': 'Artificial Intelligence Internship: https://www.instamojo.com/pantechsolutions/ai-master-class-using-python/?discount=season3 Machine Learning Internship: ...', 'url': 'https://i.ytimg.com/vi/cIEf1G8ny7I/hqdefault_live.jpg'}, 'ov12nDviSg0': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Day 2 Afternoon Session Machine Learning and Artificial Intelligence in Data Science  Phase-2', 'description': '', 'url': 'https://i.ytimg.com/vi/ov12nDviSg0/hqdefault_live.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 15:51:49,150: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[fbfa8e69-6992-4172-87da-53f7c75989cd]  
+[2021-05-25 15:51:49,151: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[da3a2c1c-8438-4994-a06b-36dc8849107b] succeeded in 0.8085562230007781s: {'ApwJCx7Uuls': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Nose to identify Smells using Machine Learning', 'description': 'Artificial Nose to identify Smells using Machine Learning Inspired by #Covid - induced #smell loss Benjamin Cabé, Principal programmer at Microsoft created a ...', 'url': 'https://i.ytimg.com/vi/ApwJCx7Uuls/hqdefault.jpg'}, 'cIEf1G8ny7I': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Python &amp; Computer Vision - Day-2 | Deep Learning Master Class 5 Day webinar', 'description': 'Artificial Intelligence Internship: https://www.instamojo.com/pantechsolutions/ai-master-class-using-python/?discount=season3 Machine Learning Internship: ...', 'url': 'https://i.ytimg.com/vi/cIEf1G8ny7I/hqdefault_live.jpg'}, 'ov12nDviSg0': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Day 2 Afternoon Session Machine Learning and Artificial Intelligence in Data Science  Phase-2', 'description': '', 'url': 'https://i.ytimg.com/vi/ov12nDviSg0/hq...', ...}
+[2021-05-25 15:51:49,152: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 15:51:49,153: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 15:51:49,161: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[fbfa8e69-6992-4172-87da-53f7c75989cd] raised unexpected: ValidationError(["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."])
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 52, in insert_into_database
+    video_instance.save()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 851, in _save_table
+    forced_update)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1469, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1127, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1435, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 793, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1279, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1274, in get_prep_value
+    return self.to_python(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1249, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."]
+[2021-05-25 16:17:51,791: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[094b821f-927b-4078-a115-d3e8107c9c32]  
+[2021-05-25 16:17:52,713: WARNING/ForkPoolWorker-6] {'q0OQGtQSos4': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Free Demo Session | Artificial Intelligence &amp; Machine Learning', 'description': '', 'url': 'https://i.ytimg.com/vi/q0OQGtQSos4/hqdefault_live.jpg'}, '_r1oFhbIPxo': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Machine Learning with TensorFlow | Qwiklabs [GSP273]', 'description': 'Join Telegram: https://t.me/TechieZilla Please do like, share and subscribe! Lab Link: https://run.qwiklabs.com/focuses/3391?parent=catalog Follow this doc for ...', 'url': 'https://i.ytimg.com/vi/_r1oFhbIPxo/hqdefault.jpg'}, 'X_hzI7Mj2Bw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Intelligence and Machine Learning. Detailed Webinar link! https://youtu.be/gpkXjs6tgxY', 'description': '', 'url': 'https://i.ytimg.com/vi/X_hzI7Mj2Bw/hqdefault.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 16:17:52,714: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[25b9667d-331c-4b57-b3b1-e555fa9fbd29]  
+[2021-05-25 16:17:52,714: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[094b821f-927b-4078-a115-d3e8107c9c32] succeeded in 0.9215698200023326s: {'q0OQGtQSos4': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Free Demo Session | Artificial Intelligence &amp; Machine Learning', 'description': '', 'url': 'https://i.ytimg.com/vi/q0OQGtQSos4/hqdefault_live.jpg'}, '_r1oFhbIPxo': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Machine Learning with TensorFlow | Qwiklabs [GSP273]', 'description': 'Join Telegram: https://t.me/TechieZilla Please do like, share and subscribe! Lab Link: https://run.qwiklabs.com/focuses/3391?parent=catalog Follow this doc for ...', 'url': 'https://i.ytimg.com/vi/_r1oFhbIPxo/hqdefault.jpg'}, 'X_hzI7Mj2Bw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Intelligence and Machine Learning. Detailed Webinar link! https://youtu.be/gpkXjs6tgxY', 'description': '', 'url': 'https://i.ytimg.com/vi/X_hzI7Mj2Bw/hqdefault.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 16:17:52,735: WARNING/ForkPoolWorker-6] time to insert
+[2021-05-25 16:17:52,736: WARNING/ForkPoolWorker-6] type is : <class 'dict'>
+[2021-05-25 16:17:52,783: ERROR/ForkPoolWorker-6] Task searchingApp.tasks.insert_into_database[25b9667d-331c-4b57-b3b1-e555fa9fbd29] raised unexpected: ValidationError(["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."])
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 52, in insert_into_database
+    video_instance.save()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 851, in _save_table
+    forced_update)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1469, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1127, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1435, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 793, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1279, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1274, in get_prep_value
+    return self.to_python(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1249, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."]
+[2021-05-25 16:19:45,807: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[57216817-a6e3-455b-af8d-35b7653089c9]  
+[2021-05-25 16:19:46,534: WARNING/ForkPoolWorker-6] {'q0OQGtQSos4': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Free Demo Session | Artificial Intelligence &amp; Machine Learning', 'description': '', 'url': 'https://i.ytimg.com/vi/q0OQGtQSos4/hqdefault_live.jpg'}, '_r1oFhbIPxo': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Machine Learning with TensorFlow | Qwiklabs [GSP273]', 'description': 'Join Telegram: https://t.me/TechieZilla Please do like, share and subscribe! Lab Link: https://run.qwiklabs.com/focuses/3391?parent=catalog Follow this doc for ...', 'url': 'https://i.ytimg.com/vi/_r1oFhbIPxo/hqdefault.jpg'}, 'X_hzI7Mj2Bw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Intelligence and Machine Learning. Detailed Webinar link! https://youtu.be/gpkXjs6tgxY', 'description': '', 'url': 'https://i.ytimg.com/vi/X_hzI7Mj2Bw/hqdefault.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 16:19:46,535: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[1bae240e-2926-4104-bf37-1213fb445486]  
+[2021-05-25 16:19:46,536: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[57216817-a6e3-455b-af8d-35b7653089c9] succeeded in 0.727676986996812s: {'q0OQGtQSos4': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Free Demo Session | Artificial Intelligence &amp; Machine Learning', 'description': '', 'url': 'https://i.ytimg.com/vi/q0OQGtQSos4/hqdefault_live.jpg'}, '_r1oFhbIPxo': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Machine Learning with TensorFlow | Qwiklabs [GSP273]', 'description': 'Join Telegram: https://t.me/TechieZilla Please do like, share and subscribe! Lab Link: https://run.qwiklabs.com/focuses/3391?parent=catalog Follow this doc for ...', 'url': 'https://i.ytimg.com/vi/_r1oFhbIPxo/hqdefault.jpg'}, 'X_hzI7Mj2Bw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Intelligence and Machine Learning. Detailed Webinar link! https://youtu.be/gpkXjs6tgxY', 'description': '', 'url': 'https://i.ytimg.com/vi/X_hzI7Mj2Bw/hqdefault.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 16:19:46,536: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 16:19:46,536: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 16:19:46,544: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[1bae240e-2926-4104-bf37-1213fb445486] raised unexpected: ValidationError(["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."])
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 52, in insert_into_database
+    video_instance.save()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 851, in _save_table
+    forced_update)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1469, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1127, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1435, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 793, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1279, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1274, in get_prep_value
+    return self.to_python(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1249, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."]
+[2021-05-25 16:20:50,522: INFO/MainProcess] Received task: searchingApp.tasks.fetch_youtube_data[812d95b0-296c-48ba-b786-80ae9a376e00]  
+[2021-05-25 16:20:51,197: WARNING/ForkPoolWorker-6] {'q0OQGtQSos4': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Free Demo Session | Artificial Intelligence &amp; Machine Learning', 'description': '', 'url': 'https://i.ytimg.com/vi/q0OQGtQSos4/hqdefault_live.jpg'}, '_r1oFhbIPxo': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Machine Learning with TensorFlow | Qwiklabs [GSP273]', 'description': 'Join Telegram: https://t.me/TechieZilla Please do like, share and subscribe! Lab Link: https://run.qwiklabs.com/focuses/3391?parent=catalog Follow this doc for ...', 'url': 'https://i.ytimg.com/vi/_r1oFhbIPxo/hqdefault.jpg'}, 'X_hzI7Mj2Bw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Intelligence and Machine Learning. Detailed Webinar link! https://youtu.be/gpkXjs6tgxY', 'description': '', 'url': 'https://i.ytimg.com/vi/X_hzI7Mj2Bw/hqdefault.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 16:20:51,198: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[633ca3e5-26e8-4b68-b67b-46cfa4accdcb]  
+[2021-05-25 16:20:51,199: INFO/ForkPoolWorker-6] Task searchingApp.tasks.fetch_youtube_data[812d95b0-296c-48ba-b786-80ae9a376e00] succeeded in 0.6769976910036348s: {'q0OQGtQSos4': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Free Demo Session | Artificial Intelligence &amp; Machine Learning', 'description': '', 'url': 'https://i.ytimg.com/vi/q0OQGtQSos4/hqdefault_live.jpg'}, '_r1oFhbIPxo': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Machine Learning with TensorFlow | Qwiklabs [GSP273]', 'description': 'Join Telegram: https://t.me/TechieZilla Please do like, share and subscribe! Lab Link: https://run.qwiklabs.com/focuses/3391?parent=catalog Follow this doc for ...', 'url': 'https://i.ytimg.com/vi/_r1oFhbIPxo/hqdefault.jpg'}, 'X_hzI7Mj2Bw': {'published_at': datetime.datetime(2021, 5, 25, 0, 0), 'title': 'Artificial Intelligence and Machine Learning. Detailed Webinar link! https://youtu.be/gpkXjs6tgxY', 'description': '', 'url': 'https://i.ytimg.com/vi/X_hzI7Mj2Bw/hqdefault.jpg'}, 'query': 'Machine learning', 'user': 'chandra@shukla.com'}
+[2021-05-25 16:20:51,200: WARNING/ForkPoolWorker-7] time to insert
+[2021-05-25 16:20:51,201: WARNING/ForkPoolWorker-7] type is : <class 'dict'>
+[2021-05-25 16:20:51,209: ERROR/ForkPoolWorker-7] Task searchingApp.tasks.insert_into_database[633ca3e5-26e8-4b68-b67b-46cfa4accdcb] raised unexpected: ValidationError(["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."])
+Traceback (most recent call last):
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 405, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/celery/app/trace.py", line 697, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/jm1shra/Summer2021/Internships/Innovaccer/Task1/youtubeRecords/searchingApp/tasks.py", line 52, in insert_into_database
+    video_instance.save()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 851, in _save_table
+    forced_update)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/base.py", line 900, in _do_update
+    return filtered._update(values) > 0
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/query.py", line 760, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1469, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1127, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1435, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 793, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1279, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1274, in get_prep_value
+    return self.to_python(value)
+  File "/home/jm1shra/anaconda3/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1249, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'2021-05-25T00:00:00' value has an invalid date format. It must be in YYYY-MM-DD format."]
+[2021-05-25 22:52:34,158: INFO/MainProcess] Connected to redis://localhost:6379//
+[2021-05-25 22:52:34,174: INFO/MainProcess] mingle: searching for neighbors
+[2021-05-25 22:52:35,202: INFO/MainProcess] mingle: all alone
+[2021-05-25 22:52:35,245: WARNING/MainProcess] /home/jm1shra/.local/lib/python3.6/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2021-05-25 22:52:35,246: INFO/MainProcess] celery@Bddeveloper ready.
+[2021-05-25 22:52:35,264: INFO/MainProcess] Received task: searchingApp.tasks.add[edbda5eb-5582-4358-8bcd-0dee60d81337]  
+[2021-05-25 22:52:35,266: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:52:35,270: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[edbda5eb-5582-4358-8bcd-0dee60d81337] succeeded in 0.00402849400006744s: 8
+[2021-05-25 22:52:55,145: INFO/MainProcess] Received task: searchingApp.tasks.add[c52f023e-48ad-452a-bbdc-4116f64dd79d]  
+[2021-05-25 22:52:55,146: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:52:55,147: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c52f023e-48ad-452a-bbdc-4116f64dd79d] succeeded in 0.0011574860000109766s: 8
+[2021-05-25 22:53:25,167: INFO/MainProcess] Received task: searchingApp.tasks.add[8b043a24-8ed0-4423-9681-7cf448b826b0]  
+[2021-05-25 22:53:25,168: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:53:25,168: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[8b043a24-8ed0-4423-9681-7cf448b826b0] succeeded in 0.0009602310001355363s: 8
+[2021-05-25 22:53:55,165: INFO/MainProcess] Received task: searchingApp.tasks.add[78cf8516-9f84-4599-90b8-0c7c35764b21]  
+[2021-05-25 22:53:55,166: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:53:55,167: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[78cf8516-9f84-4599-90b8-0c7c35764b21] succeeded in 0.0008656130000872508s: 8
+[2021-05-25 22:54:25,189: INFO/MainProcess] Received task: searchingApp.tasks.add[ec012d6d-58e7-48b9-b28b-7bb357a119e7]  
+[2021-05-25 22:54:25,191: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:54:25,193: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[ec012d6d-58e7-48b9-b28b-7bb357a119e7] succeeded in 0.0021709560000999772s: 8
+[2021-05-25 22:54:55,207: INFO/MainProcess] Received task: searchingApp.tasks.add[e2ffb0db-ec8b-47b5-81d2-f0c102b6ccb0]  
+[2021-05-25 22:54:55,209: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:54:55,210: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[e2ffb0db-ec8b-47b5-81d2-f0c102b6ccb0] succeeded in 0.0015905889999885403s: 8
+[2021-05-25 22:55:25,207: INFO/MainProcess] Received task: searchingApp.tasks.add[417e142e-dcb3-4ee5-84a8-1fd0cc65d843]  
+[2021-05-25 22:55:25,208: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:55:25,209: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[417e142e-dcb3-4ee5-84a8-1fd0cc65d843] succeeded in 0.0009925819999807572s: 8
+[2021-05-25 22:55:55,228: INFO/MainProcess] Received task: searchingApp.tasks.add[b6050918-7eb6-4f85-abf6-b8899b5e103e]  
+[2021-05-25 22:55:55,229: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:55:55,230: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[b6050918-7eb6-4f85-abf6-b8899b5e103e] succeeded in 0.0009681700003056903s: 8
+[2021-05-25 22:56:25,227: INFO/MainProcess] Received task: searchingApp.tasks.add[df202a4e-616f-4070-b500-90ee791eff9f]  
+[2021-05-25 22:56:25,228: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:56:25,229: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[df202a4e-616f-4070-b500-90ee791eff9f] succeeded in 0.0011211089999960677s: 8
+[2021-05-25 22:56:55,250: INFO/MainProcess] Received task: searchingApp.tasks.add[47475305-7d79-4b19-ad40-17e0bff5178f]  
+[2021-05-25 22:56:55,251: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:56:55,252: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[47475305-7d79-4b19-ad40-17e0bff5178f] succeeded in 0.0009390179998263193s: 8
+[2021-05-25 22:57:25,271: INFO/MainProcess] Received task: searchingApp.tasks.add[c05d8449-2e5b-40d5-ab20-77dea04782f0]  
+[2021-05-25 22:57:25,273: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:57:25,275: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c05d8449-2e5b-40d5-ab20-77dea04782f0] succeeded in 0.0021176029999878665s: 8
+[2021-05-25 22:57:55,288: INFO/MainProcess] Received task: searchingApp.tasks.add[1f845a5e-c585-453f-8812-19761a8e32b8]  
+[2021-05-25 22:57:55,289: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:57:55,290: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[1f845a5e-c585-453f-8812-19761a8e32b8] succeeded in 0.0009816339997996693s: 8
+[2021-05-25 22:58:25,290: INFO/MainProcess] Received task: searchingApp.tasks.add[0d3bf500-afab-4424-b75c-6a421f6e0f3b]  
+[2021-05-25 22:58:25,291: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:58:25,292: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[0d3bf500-afab-4424-b75c-6a421f6e0f3b] succeeded in 0.0008912100001907675s: 8
+[2021-05-25 22:58:55,313: INFO/MainProcess] Received task: searchingApp.tasks.add[597ba3e8-c8c4-43a2-bad4-5d3b4d554de8]  
+[2021-05-25 22:58:55,315: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:58:55,317: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[597ba3e8-c8c4-43a2-bad4-5d3b4d554de8] succeeded in 0.0020220189999236027s: 8
+[2021-05-25 22:59:25,315: INFO/MainProcess] Received task: searchingApp.tasks.add[0f32ea8c-2998-4903-bda8-5f7e80c9a6df]  
+[2021-05-25 22:59:25,317: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:59:25,319: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[0f32ea8c-2998-4903-bda8-5f7e80c9a6df] succeeded in 0.0019359439997970185s: 8
+[2021-05-25 22:59:55,337: INFO/MainProcess] Received task: searchingApp.tasks.add[7183fb76-260a-458b-bceb-a8661a89fd21]  
+[2021-05-25 22:59:55,339: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 22:59:55,341: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[7183fb76-260a-458b-bceb-a8661a89fd21] succeeded in 0.0022302869997474772s: 8
+[2021-05-25 23:00:25,354: INFO/MainProcess] Received task: searchingApp.tasks.add[0f6a8912-1a3d-43da-8dbc-406b484c393f]  
+[2021-05-25 23:00:25,355: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:00:25,355: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[0f6a8912-1a3d-43da-8dbc-406b484c393f] succeeded in 0.0009467469999435707s: 8
+[2021-05-25 23:00:55,376: INFO/MainProcess] Received task: searchingApp.tasks.add[c0076340-9a0e-450b-80e7-78f8108d3aa3]  
+[2021-05-25 23:00:55,378: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:00:55,380: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c0076340-9a0e-450b-80e7-78f8108d3aa3] succeeded in 0.0020286789999772736s: 8
+[2021-05-25 23:01:14,102: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[9bd1f24f-f3f9-49c2-9632-666b4b985d52]  
+[2021-05-25 23:01:14,105: WARNING/ForkPoolWorker-6] time to insert
+[2021-05-25 23:01:14,207: WARNING/ForkPoolWorker-6] /home/jm1shra/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1368: RuntimeWarning: DateTimeField YoutubeData.published_date received a naive datetime (2021-05-25 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+[2021-05-25 23:01:14,256: WARNING/ForkPoolWorker-6] video done
+[2021-05-25 23:01:14,261: WARNING/ForkPoolWorker-6] {'user': <User: alok>, 'query': 'Physics learning', 'videos': ['q79DsGqJ-X8', '4fYAYtfFP-k', '4t7lYQ5Luvo'], 'last_time': datetime.datetime(2021, 5, 25, 23, 1, 14, 260899)}
+[2021-05-25 23:01:14,265: WARNING/ForkPoolWorker-6] made query inserted into dataset
+[2021-05-25 23:01:14,266: INFO/ForkPoolWorker-6] Task searchingApp.tasks.insert_into_database[9bd1f24f-f3f9-49c2-9632-666b4b985d52] succeeded in 0.1612433069999497s: None
+[2021-05-25 23:01:25,378: INFO/MainProcess] Received task: searchingApp.tasks.add[20ec2bc3-6f64-4f6d-b7b1-d3250cd575f0]  
+[2021-05-25 23:01:25,379: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:01:25,380: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[20ec2bc3-6f64-4f6d-b7b1-d3250cd575f0] succeeded in 0.0010751330000857706s: 8
+[2021-05-25 23:01:55,383: INFO/MainProcess] Received task: searchingApp.tasks.add[38e8b02d-0fc0-4b79-987e-81111c26e9b2]  
+[2021-05-25 23:01:55,383: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:01:55,384: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[38e8b02d-0fc0-4b79-987e-81111c26e9b2] succeeded in 0.0009673129998191143s: 8
+[2021-05-25 23:02:25,406: INFO/MainProcess] Received task: searchingApp.tasks.add[627ce9e0-7a9d-44d3-a551-8036f0d6f0e1]  
+[2021-05-25 23:02:25,408: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:02:25,409: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[627ce9e0-7a9d-44d3-a551-8036f0d6f0e1] succeeded in 0.0019303979997857823s: 8
+[2021-05-25 23:02:55,426: INFO/MainProcess] Received task: searchingApp.tasks.add[a6888881-c625-4d41-803d-593253a18741]  
+[2021-05-25 23:02:55,428: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:02:55,430: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[a6888881-c625-4d41-803d-593253a18741] succeeded in 0.0022635810000792844s: 8
+[2021-05-25 23:03:25,445: INFO/MainProcess] Received task: searchingApp.tasks.add[206aa0f1-8ab6-497f-b589-1cc78b3a7c17]  
+[2021-05-25 23:03:25,447: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:03:25,449: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[206aa0f1-8ab6-497f-b589-1cc78b3a7c17] succeeded in 0.002000462000069092s: 8
+[2021-05-25 23:03:55,466: INFO/MainProcess] Received task: searchingApp.tasks.add[c2858a1a-a875-4076-8708-d0265df0ca3c]  
+[2021-05-25 23:03:55,468: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:03:55,470: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c2858a1a-a875-4076-8708-d0265df0ca3c] succeeded in 0.002150921000065864s: 8
+[2021-05-25 23:04:25,487: INFO/MainProcess] Received task: searchingApp.tasks.add[0255e49a-559b-4178-a424-52bb0119f91f]  
+[2021-05-25 23:04:25,489: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:04:25,491: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[0255e49a-559b-4178-a424-52bb0119f91f] succeeded in 0.0021414570001070388s: 8
+[2021-05-25 23:04:55,508: INFO/MainProcess] Received task: searchingApp.tasks.add[1b9572bb-ebb8-4cc3-9d00-3194cfe1eedd]  
+[2021-05-25 23:04:55,510: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:04:55,512: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[1b9572bb-ebb8-4cc3-9d00-3194cfe1eedd] succeeded in 0.0021553100000346603s: 8
+[2021-05-25 23:05:25,525: INFO/MainProcess] Received task: searchingApp.tasks.add[2b6a0eca-65c0-464a-bd3b-428b07365b66]  
+[2021-05-25 23:05:25,527: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:05:25,529: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[2b6a0eca-65c0-464a-bd3b-428b07365b66] succeeded in 0.0018832589998964977s: 8
+[2021-05-25 23:05:55,543: INFO/MainProcess] Received task: searchingApp.tasks.add[2afc0c12-669a-4502-a7f6-7162b64be340]  
+[2021-05-25 23:05:55,545: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:05:55,545: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[2afc0c12-669a-4502-a7f6-7162b64be340] succeeded in 0.000976364000052854s: 8
+[2021-05-25 23:06:25,566: INFO/MainProcess] Received task: searchingApp.tasks.add[ac43dc49-c866-4ef7-8e52-ade5848d8ac9]  
+[2021-05-25 23:06:25,568: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:06:25,569: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[ac43dc49-c866-4ef7-8e52-ade5848d8ac9] succeeded in 0.0017149609998341475s: 8
+[2021-05-25 23:06:55,582: INFO/MainProcess] Received task: searchingApp.tasks.add[9694dbf1-acc6-47ec-be66-eb3591bfee39]  
+[2021-05-25 23:06:55,583: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:06:55,583: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[9694dbf1-acc6-47ec-be66-eb3591bfee39] succeeded in 0.0009695720000308938s: 8
+[2021-05-25 23:07:25,604: INFO/MainProcess] Received task: searchingApp.tasks.add[0806b6a7-5a33-4b2b-b097-f697f3b06e75]  
+[2021-05-25 23:07:25,605: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:07:25,606: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[0806b6a7-5a33-4b2b-b097-f697f3b06e75] succeeded in 0.001058317000115494s: 8
+[2021-05-25 23:07:55,627: INFO/MainProcess] Received task: searchingApp.tasks.add[d28e56ef-b000-4fad-8248-4f7926d0ccf5]  
+[2021-05-25 23:07:55,629: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:07:55,631: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[d28e56ef-b000-4fad-8248-4f7926d0ccf5] succeeded in 0.0022048699997867516s: 8
+[2021-05-25 23:08:25,625: INFO/MainProcess] Received task: searchingApp.tasks.add[e7900896-d2a3-4fb6-a768-fee052efeab9]  
+[2021-05-25 23:08:25,626: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:08:25,627: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[e7900896-d2a3-4fb6-a768-fee052efeab9] succeeded in 0.0012965990003976913s: 8
+[2021-05-25 23:08:55,646: INFO/MainProcess] Received task: searchingApp.tasks.add[99633244-2daa-4432-b44d-3157a1d1ccfa]  
+[2021-05-25 23:08:55,648: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:08:55,650: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[99633244-2daa-4432-b44d-3157a1d1ccfa] succeeded in 0.0020825459996558493s: 8
+[2021-05-25 23:09:25,644: INFO/MainProcess] Received task: searchingApp.tasks.add[442d8ea8-c362-4ebd-9469-03eeb2db9800]  
+[2021-05-25 23:09:25,645: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:09:25,645: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[442d8ea8-c362-4ebd-9469-03eeb2db9800] succeeded in 0.0010186330000578891s: 8
+[2021-05-25 23:09:55,656: INFO/MainProcess] Received task: searchingApp.tasks.add[5f1aea88-b317-47d0-b819-9e6cef262cd6]  
+[2021-05-25 23:09:55,658: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:09:55,660: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[5f1aea88-b317-47d0-b819-9e6cef262cd6] succeeded in 0.0018367590000707423s: 8
+[2021-05-25 23:10:25,668: INFO/MainProcess] Received task: searchingApp.tasks.add[e3a0f56e-ee52-4550-9450-dc72ad184f4e]  
+[2021-05-25 23:10:25,669: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:10:25,670: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[e3a0f56e-ee52-4550-9450-dc72ad184f4e] succeeded in 0.001089948999833723s: 8
+[2021-05-25 23:10:55,682: INFO/MainProcess] Received task: searchingApp.tasks.add[cf14acba-8421-4788-abe8-35d3e4b7f9c5]  
+[2021-05-25 23:10:55,683: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:10:55,684: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[cf14acba-8421-4788-abe8-35d3e4b7f9c5] succeeded in 0.0010961109996969753s: 8
+[2021-05-25 23:11:25,706: INFO/MainProcess] Received task: searchingApp.tasks.add[1401f512-65d0-44cc-a5b2-e8980b90de0e]  
+[2021-05-25 23:11:25,707: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:11:25,709: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[1401f512-65d0-44cc-a5b2-e8980b90de0e] succeeded in 0.0019960959998570615s: 8
+[2021-05-25 23:11:55,726: INFO/MainProcess] Received task: searchingApp.tasks.add[45543030-c7a8-43ef-bb87-d3e89c1767bd]  
+[2021-05-25 23:11:55,728: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:11:55,729: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[45543030-c7a8-43ef-bb87-d3e89c1767bd] succeeded in 0.0017369359998156142s: 8
+[2021-05-25 23:12:25,747: INFO/MainProcess] Received task: searchingApp.tasks.add[c305da93-cd03-4668-9bab-6b42fb9e2236]  
+[2021-05-25 23:12:25,749: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:12:25,751: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[c305da93-cd03-4668-9bab-6b42fb9e2236] succeeded in 0.0021606999998766696s: 8
+[2021-05-25 23:12:55,768: INFO/MainProcess] Received task: searchingApp.tasks.add[8f917ace-a6f9-45d8-9376-91c0fa6f5567]  
+[2021-05-25 23:12:55,770: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:12:55,772: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[8f917ace-a6f9-45d8-9376-91c0fa6f5567] succeeded in 0.002350622999983898s: 8
+[2021-05-25 23:13:12,131: INFO/MainProcess] Received task: searchingApp.tasks.insert_into_database[d0a98685-e724-4575-8d91-228484172b0d]  
+[2021-05-25 23:13:12,132: WARNING/ForkPoolWorker-6] time to insert
+[2021-05-25 23:13:12,187: WARNING/ForkPoolWorker-6] video done
+[2021-05-25 23:13:12,194: WARNING/ForkPoolWorker-6] {'user': <User: other>, 'query': 'Physics learning', 'videos': ['q79DsGqJ-X8', '4fYAYtfFP-k', '4t7lYQ5Luvo'], 'last_time': datetime.datetime(2021, 5, 25, 23, 13, 12, 194071)}
+[2021-05-25 23:13:12,199: WARNING/ForkPoolWorker-6] made query inserted into dataset
+[2021-05-25 23:13:12,199: INFO/ForkPoolWorker-6] Task searchingApp.tasks.insert_into_database[d0a98685-e724-4575-8d91-228484172b0d] succeeded in 0.06751663500017457s: None
+[2021-05-25 23:13:25,780: INFO/MainProcess] Received task: searchingApp.tasks.add[18362fd7-1005-46b0-8bdc-674a2710a0fa]  
+[2021-05-25 23:13:25,781: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:13:25,782: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[18362fd7-1005-46b0-8bdc-674a2710a0fa] succeeded in 0.0011511920001794351s: 8
+[2021-05-25 23:13:55,793: INFO/MainProcess] Received task: searchingApp.tasks.add[cbdf0a55-19b1-427e-8e3a-d9bd9c672559]  
+[2021-05-25 23:13:55,795: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:13:55,797: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[cbdf0a55-19b1-427e-8e3a-d9bd9c672559] succeeded in 0.0019413690001783834s: 8
+[2021-05-25 23:14:25,800: INFO/MainProcess] Received task: searchingApp.tasks.add[eccfced4-33fd-4f21-a694-1d6b8f193d62]  
+[2021-05-25 23:14:25,802: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:14:25,804: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[eccfced4-33fd-4f21-a694-1d6b8f193d62] succeeded in 0.0017750800002431788s: 8
+[2021-05-25 23:14:55,802: INFO/MainProcess] Received task: searchingApp.tasks.add[28a8abb9-8d12-4f25-9b28-0807286f493e]  
+[2021-05-25 23:14:55,806: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:14:55,808: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[28a8abb9-8d12-4f25-9b28-0807286f493e] succeeded in 0.0024793870002213225s: 8
+[2021-05-25 23:15:25,808: INFO/MainProcess] Received task: searchingApp.tasks.add[1647f453-f147-48e2-9381-620f548f1a88]  
+[2021-05-25 23:15:25,810: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:15:25,812: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[1647f453-f147-48e2-9381-620f548f1a88] succeeded in 0.0022875250001561653s: 8
+[2021-05-25 23:15:55,815: INFO/MainProcess] Received task: searchingApp.tasks.add[f93d8bd3-af8e-49e8-8009-606998f8a7b1]  
+[2021-05-25 23:15:55,817: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:15:55,819: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[f93d8bd3-af8e-49e8-8009-606998f8a7b1] succeeded in 0.002279567000186944s: 8
+[2021-05-25 23:16:25,819: INFO/MainProcess] Received task: searchingApp.tasks.add[5e516f57-7b3f-4763-85a2-30d5db01f2cf]  
+[2021-05-25 23:16:25,820: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:16:25,821: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[5e516f57-7b3f-4763-85a2-30d5db01f2cf] succeeded in 0.0009523720000288449s: 8
+[2021-05-25 23:16:55,819: INFO/MainProcess] Received task: searchingApp.tasks.add[dd1f6f3e-7611-42c7-a4d5-f54357c3fbd3]  
+[2021-05-25 23:16:55,821: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:16:55,823: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[dd1f6f3e-7611-42c7-a4d5-f54357c3fbd3] succeeded in 0.0018653749998520652s: 8
+[2021-05-25 23:17:25,822: INFO/MainProcess] Received task: searchingApp.tasks.add[93b8a760-11cf-466f-b807-f2a99ee54699]  
+[2021-05-25 23:17:25,825: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:17:25,828: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[93b8a760-11cf-466f-b807-f2a99ee54699] succeeded in 0.0027635779997581267s: 8
+[2021-05-25 23:17:55,838: INFO/MainProcess] Received task: searchingApp.tasks.add[91666944-808a-4428-91c7-2ed94af31bd4]  
+[2021-05-25 23:17:55,841: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:17:55,843: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[91666944-808a-4428-91c7-2ed94af31bd4] succeeded in 0.0029853289997845422s: 8
+[2021-05-25 23:18:25,847: INFO/MainProcess] Received task: searchingApp.tasks.add[59f64026-79f6-4fca-9743-a56c4f12e582]  
+[2021-05-25 23:18:25,849: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:18:25,851: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[59f64026-79f6-4fca-9743-a56c4f12e582] succeeded in 0.002176560999942012s: 8
+[2021-05-25 23:18:55,869: INFO/MainProcess] Received task: searchingApp.tasks.add[1d5c53f0-8afb-4514-9f2f-1c7db5f85cef]  
+[2021-05-25 23:18:55,871: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:18:55,873: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[1d5c53f0-8afb-4514-9f2f-1c7db5f85cef] succeeded in 0.002151436000076501s: 8
+[2021-05-25 23:19:25,887: INFO/MainProcess] Received task: searchingApp.tasks.add[a30fe15b-d7b1-4672-a995-722ba77d4d7c]  
+[2021-05-25 23:19:25,889: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:19:25,891: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[a30fe15b-d7b1-4672-a995-722ba77d4d7c] succeeded in 0.0021399699999165023s: 8
+[2021-05-25 23:19:55,905: INFO/MainProcess] Received task: searchingApp.tasks.add[7ad3cd14-e7fd-404b-8830-d165b2feaa12]  
+[2021-05-25 23:19:55,906: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:19:55,907: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[7ad3cd14-e7fd-404b-8830-d165b2feaa12] succeeded in 0.0010533660001783574s: 8
+[2021-05-25 23:20:25,928: INFO/MainProcess] Received task: searchingApp.tasks.add[febe009d-9e9a-4084-b430-46b09aa7526b]  
+[2021-05-25 23:20:25,930: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:20:25,933: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[febe009d-9e9a-4084-b430-46b09aa7526b] succeeded in 0.0027766119997068017s: 8
+[2021-05-25 23:20:55,947: INFO/MainProcess] Received task: searchingApp.tasks.add[e610713f-97c2-44c2-9f52-9525520352b6]  
+[2021-05-25 23:20:55,949: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:20:55,951: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[e610713f-97c2-44c2-9f52-9525520352b6] succeeded in 0.002211660999819287s: 8
+[2021-05-25 23:21:25,968: INFO/MainProcess] Received task: searchingApp.tasks.add[19d32c1e-68fb-4d64-9847-9b01b275b93e]  
+[2021-05-25 23:21:25,970: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:21:25,972: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[19d32c1e-68fb-4d64-9847-9b01b275b93e] succeeded in 0.002323284999874886s: 8
+[2021-05-25 23:21:55,984: INFO/MainProcess] Received task: searchingApp.tasks.add[7e789860-8830-48fa-b68f-e4544493a289]  
+[2021-05-25 23:21:55,985: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:21:55,986: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[7e789860-8830-48fa-b68f-e4544493a289] succeeded in 0.0010691469997254899s: 8
+[2021-05-25 23:22:26,007: INFO/MainProcess] Received task: searchingApp.tasks.add[806eb923-d3a1-4c73-9c80-4a53aec82155]  
+[2021-05-25 23:22:26,009: WARNING/ForkPoolWorker-6] 8
+[2021-05-25 23:22:26,011: INFO/ForkPoolWorker-6] Task searchingApp.tasks.add[806eb923-d3a1-4c73-9c80-4a53aec82155] succeeded in 0.002338980000331503s: 8

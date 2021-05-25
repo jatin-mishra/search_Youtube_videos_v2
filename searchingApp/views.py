@@ -31,19 +31,21 @@ def getUser(key_name):
 class topicRegistration(APIView):
     def post(self, request):
         query = request.data.get('query')
-        numberOfVideos = request.data.get('video_n')
+        numberOfVideos = request.data.get('videos_n')
 
         if not query:
-            return Response({"message" : "query not specified"}, status=status.HTTP_204_NO_CONTENT)
+            return Response({"message" : "query not specified"}, status=status.HTTP_400_BAD_REQUEST)
 
         if not numberOfVideos:
             numberOfVideos = 10
         
-        userdata = getUser(request.COOKIES.get('jwt'))
-        somedata = fetch_youtube_data(userdata.serialize(), numberOfVideos, query)
-        # somedata = fetch_youtube_data.delay(userdata.serialize(), numberOfVideos, query)
-        return Response({"message" : "done"}, status=status.HTTP_200_OK)
+        current_user = getUser(request.COOKIES.get('jwt'))
+        if not queryModel.objects.filter(query=query).filter(user=current_user).exists():
+            somedata = fetch_youtube_data.delay(current_user.serialize(), numberOfVideos, query)
+            # somedata = fetch_youtube_data(current_user.serialize(), numberOfVideos, query)
+            return Response({"message" : "done"}, status=status.HTTP_201_CREATED)
         
+        return Response({"message" : "Already Registered"}, status=status.HTTP_208_ALREADY_REPORTED)
 
 # Create your views here.
 
@@ -81,7 +83,8 @@ class searchingView(APIView):
                     all_videos[video_id] = video_instance.serialize()
                 
                 if not queryset.filter(user=current_user).exists():
-                    fetch_youtube_data.delay(current_user, video_n, query)
+                    fetch_youtube_data(current_user.serialize(), videos_n, query)
+                    # fetch_youtube_data.delay(current_user.serialize(), video_n, query)
                     print(f'other user than {current_user.email} called for this')
                 
                 return Response(all_videos)

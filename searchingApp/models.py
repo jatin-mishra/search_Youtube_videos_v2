@@ -6,7 +6,7 @@ from djongo import models as mongo_model
 # Create your models here.
 class YoutubeData(models.Model):
     video_id = models.CharField(max_length=255, primary_key=True)
-    published_date = models.DateField()
+    published_date = models.DateTimeField()
     title = models.TextField()
     description = models.TextField()
     actual_link = models.CharField(max_length=255)

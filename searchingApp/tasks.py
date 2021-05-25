@@ -34,7 +34,7 @@ def insert_into_database(recordsAsDictionary):
     print('time to insert')
     all_new_videos = []
     complete_list_videos = []
-    print(f'type is : {type(recordsAsDictionary)}')
+    # print(f'date ')
     current_user = User.objects.filter(email=recordsAsDictionary['user']).first()
     for videoid in recordsAsDictionary:
         if videoid == 'user' or videoid == 'query':
@@ -80,6 +80,7 @@ def insert_into_database(recordsAsDictionary):
 
 @shared_task
 def fetch_youtube_data(userdata, n = 10,query='celery videos'):
+    
     search_url = 'https://www.googleapis.com/youtube/v3/search'
     video_url = 'https://www.googleapis.com/youtube/v3/videos'
     search_params = {
@@ -124,7 +125,7 @@ def fetch_youtube_data(userdata, n = 10,query='celery videos'):
     records['query'] = query
     records['user'] = userdata['email']
 
-    insert_into_database(records)
-    # insert_into_database.delay(records)
+    # insert_into_database(records)
+    insert_into_database.delay(records)
     print(records)
     return records
