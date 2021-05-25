@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import searchingView, searchingDefaultView
+from .views import searchingView, topicRegistration
 
 
 urlpatterns = [
-    path('<int:n>', searchingView.as_view()),
-    path('', searchingDefaultView.as_view()),
+    path('', searchingView.as_view()),
+    path('register',topicRegistration.as_view())
 ]
 

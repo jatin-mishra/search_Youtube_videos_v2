@@ -40,8 +40,7 @@ app.conf.beat_schedule = {
         'schedule' : 30.0,
         'args' : (4,4,)
     },
-    'Database_population' : {
-        'task' : 'searchingApp.tasks.fetch_youtube_data',
-        'schedule' : 60.0,
-    },
+    # 'Database_population' : {
+    #     'task' : 'searchingApp.tasks.fetch_youtube_data',
+    # },
 }

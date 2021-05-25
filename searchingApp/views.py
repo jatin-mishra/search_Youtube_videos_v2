@@ -1,75 +1,101 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import YoutubeData
+from .models import YoutubeData, queryModel
 from .tasks import insert_into_database,fetch_youtube_data
-from .serializers import YoutubeDataSerializer
 from django.http import JsonResponse
-from django.contrib.auth.mixins import LoginRequiredMixin
-
+from rest_framework import status
 import datetime
-# import 
 from django.conf import settings
 from django.http import HttpResponse
 # from rest_framework.parsers import JSONParser
 import json
 import requests
+import jwt
+from users.models import User
+from users.TokenManager import setValue, getValue, checkForExistence, scheduleExpire
 
 
+def getUser(key_name):
+    secret_key = getValue(key_name + "_secret")
+    token = getValue(key_name + "_access")
 
-class searchingDefaultView(APIView):
-    def get(self, request):
-        n = 5
-        query = request.data.get('query','')
+    try:
+        payload = jwt.decode(token, secret_key, algorithms=['HS256'])
+    except jwt.ExpiredSignatureError:
+        raise AuthenticationFailed('UnAuthenticated! Session has been expired Login Again Please') 
 
-        if query or len(YoutubeData.objects.all()) < n:
-            if not n:
-                n = 10
-                
-            if not query:
-                query = 'celery tutorial'
+    return User.objects.filter(email=payload['id']).first()
 
-            alldata = fetch_youtube_data(n,query, False)
-            all_objects = []
-            for videoid in alldata:
-                if YoutubeData.objects.filter(video_id=videoid).exists():
-                    video_instance = YoutubeData(video_id=videoid,published_date=alldata[videoid]['published_at'].date(), title=alldata[videoid]['title'], description=alldata[videoid]['description'], actual_link=alldata[videoid]['url'])
-                    all_objects.append(video_instance)
-            serializer = YoutubeDataSerializer(all_objects, many=True)
-        else:
-            if not n:
-                n=10
-            all_records = YoutubeData.objects.all().order_by('-published_date')[:n] 
-            serializer = YoutubeDataSerializer(all_records, many=True)
-            
 
-        return Response(serializer.data)
+class topicRegistration(APIView):
+    def post(self, request):
+        query = request.data.get('query')
+        numberOfVideos = request.data.get('video_n')
+
+        if not query:
+            return Response({"message" : "query not specified"}, status=status.HTTP_204_NO_CONTENT)
+
+        if not numberOfVideos:
+            numberOfVideos = 10
+        
+        userdata = getUser(request.COOKIES.get('jwt'))
+        somedata = fetch_youtube_data(userdata.serialize(), numberOfVideos, query)
+        # somedata = fetch_youtube_data.delay(userdata.serialize(), numberOfVideos, query)
+        return Response({"message" : "done"}, status=status.HTTP_200_OK)
+        
 
 # Create your views here.
 
 class searchingView(APIView):
-    def get(self, request, n=None):
-        query = request.data.get('query','')
+    def post(self, request):
+        """
+            if user gave a query:
+                if query is present in queryModel:
+                    return videos
+                    add object with currentuser if not present
+                else:
+                    fetch the query and all
+            else:
+                ask for query
+        
+        """
 
-        if query or len(YoutubeData.objects.all()) < n:
-            if not n:
-                n = 10
+        query = request.data['query']
+        videos_n = request.data.get('videos_n',10)
+        current_user = getUser(request.COOKIES.get('jwt'))
+
+        print(f'videos :  {videos_n}')
+
+
+
+        if query:
+            print(f'query : {query}')
+            queryset = queryModel.objects.filter(query=query)
+            if queryset.exists():
+                print(f' query {query} exists')
+                query_instance = queryModel.objects.filter(query=query).order_by('-query_lasttime').first()
+                all_videos = {}
+                for video_id in query_instance.serialize().get('videos')[:videos_n]:
+                    video_instance = YoutubeData.objects.filter(video_id=video_id).first()
+                    all_videos[video_id] = video_instance.serialize()
                 
-            if not query:
-                query = 'celery tutorial'
-
-            alldata = fetch_youtube_data(n,query, False)
-            all_objects = []
-            for videoid in alldata:
-                if YoutubeData.objects.filter(video_id=videoid).exists():
-                    video_instance = YoutubeData(video_id=videoid,published_date=alldata[videoid]['published_at'], title=alldata[videoid]['title'], description=alldata[videoid]['description'], actual_link=alldata[videoid]['url'])
-                    all_objects.append(video_instance)
-            serializer = YoutubeDataSerializer(all_objects, many=True)
-        else:
-            if not n:
-                n=10
-            all_records = YoutubeData.objects.all().order_by('-published_date')[:n] 
-            serializer = YoutubeDataSerializer(all_records, many=True)
+                if not queryset.filter(user=current_user).exists():
+                    fetch_youtube_data.delay(current_user, video_n, query)
+                    print(f'other user than {current_user.email} called for this')
+                
+                return Response(all_videos)
             
+            # else fetch the query result
+            print('fetching the data')
+            records = fetch_youtube_data(current_user.serialize(),videos_n,query)
+            records.pop('user')
+            records.pop('query')
+            return Response(records)
+        
 
-        return Response(serializer.data)
+
+            # insert into queryModel
+            # insert into videos
+        return Response({"error" : "query not specified"}, status=status.HTTP_400_BAD_REQUEST)
+            

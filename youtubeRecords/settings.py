@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'youtubeRecords.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'SecondDataBase',
+        'NAME': 'youtube_apidata',
     }
 }
 

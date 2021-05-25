@@ -31,7 +31,7 @@ class AuthenticateMiddleware(AuthenticationMiddleware):
         
         request.user = SimpleLazyObject(lambda: get_user(request))
         
-        authentication_paths = ['/api/login', '/api/register', '/api/logout', '/api/refresh' ]
+        authentication_paths = ['/user/login', '/user/register', '/user/logout', '/user/refresh' ]
 
         print(f'path is {request.path}')
         if request.path in authentication_paths or 'admin' in request.path:
@@ -43,6 +43,7 @@ class AuthenticateMiddleware(AuthenticationMiddleware):
         secret_key = getValue(key_name + "_secret")
 
         token = getValue(key_name + "_access")
+
         if not token: 
             print('no token from middleware')
             raise AuthenticationFailed('UnAuthenticated! Login Again!')

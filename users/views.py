@@ -14,8 +14,8 @@ from .TokenManager import setValue, getValue, checkForExistence, scheduleExpire
 from rest_framework.parsers import JSONParser
  
 
-ACCESS_AGE_MINUTES = 1
-REFRESH_AGE_MINUTES = 3
+ACCESS_AGE_MINUTES = 30
+REFRESH_AGE_MINUTES = 120
 
 def generateRandomKey(fixed_length=10):
     allowedchars = 'abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()'
@@ -34,13 +34,11 @@ def create_token(user_id, secret_key, age_limit, algorithm='HS256'):
         'iat' : datetime.datetime.utcnow()
     }
 
-    token = jwt.encode(payload, secret_key, algorithm=algorithm)
+    try:
+        token = jwt.encode(payload, secret_key, algorithm=algorithm)
+    except jwt.ExpiredSignatureError:
+        return None
     return token
-
-
-
-
-
 
 
 # Create your views here.
@@ -56,8 +54,8 @@ def check_password(hashed_password, user_password):
 
 class RegisterView(APIView):
     def post(self, request):
-        data = JSONParser().parse(request)
-        password = data['password']
+        data = request.data
+        password = data.get('password','')
         if not password:
             return Response({ "message" : "Please enter your password"})
         
@@ -90,8 +88,8 @@ class LoginView(APIView):
 
         # token preparation
         secret_key = generateRandomKey()
-        access_token = create_token(user.id, secret_key, ACCESS_AGE_MINUTES)
-        refresh_token = create_token(user.id, secret_key, REFRESH_AGE_MINUTES)
+        access_token = create_token(user.email, secret_key, ACCESS_AGE_MINUTES)
+        refresh_token = create_token(user.email, secret_key, REFRESH_AGE_MINUTES)
 
         
         # key generation
@@ -120,14 +118,22 @@ class LoginView(APIView):
         }
         return response
 
+
 class RefreshToken(APIView):
     def post(self, request):
         key_name = request.COOKIES.get('jwt')
         token = request.COOKIES.get('refresh')
         if not token:
             return Response({"Error" : "please login again!"})
+
+        if not key_name:
+            return Response({"message" : "no jwt token"}, status=status.HTTP_400_BAD_REQUEST)
         secret_key = getValue(key_name + "_secret")
-        payload = jwt.decode(token, secret_key, algorithms=['HS256'])
+        try:
+            payload = jwt.decode(token, secret_key, algorithms=['HS256'])
+        except jwt.ExpiredSignatureError:
+            raise AuthenticationFailed('UnAuthenticated! Session has been expired Login Again Please') 
+
         access_token = create_token(payload['id'], secret_key, ACCESS_AGE_MINUTES)
         setValue(key_name + "_access", access_token, ACCESS_AGE_MINUTES*60)
         return Response({"message" : "successful"})
