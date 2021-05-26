@@ -26,7 +26,7 @@ class YoutubeData(models.Model):
 
 class queryModel(mongo_model.Model):
     user = mongo_model.EmailField()
-    query = mongo_model.CharField(max_length=255, primary_key=True)
+    query = mongo_model.CharField(max_length=255)
     videos = mongo_model.ArrayField(
                     model_container=YoutubeData
                 )

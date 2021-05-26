@@ -46,7 +46,7 @@ class AuthenticateMiddleware(AuthenticationMiddleware):
 
         if not token: 
             print('no token from middleware')
-            raise AuthenticationFailed('UnAuthenticated! Login Again!')
+            raise AuthenticationFailed('UnAuthenticated! Refresh Your token Again!')
         try:
             payload = jwt.decode(token, secret_key, algorithms=['HS256'])
         except jwt.ExpiredSignatureError:

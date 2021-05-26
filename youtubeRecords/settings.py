@@ -146,3 +146,7 @@ CORS_ALLOW_CREDENTIALS = True
 YOUTUBE_DATA_API_KEY = "AIzaSyBo5sB3_ywHbR8jZ5Gy17qqZwAmlmLMzDA"
 
 
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 100
+}
