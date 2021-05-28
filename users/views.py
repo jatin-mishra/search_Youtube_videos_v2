@@ -12,7 +12,7 @@ import uuid
 import hashlib
 
 from .TokenManager import setValue, getValue, checkForExistence, scheduleExpire
-from rest_framework.parsers import JSONParser
+from pymodm.errors import DoesNotExist
  
 
 ACCESS_AGE_MINUTES = 30
@@ -65,15 +65,18 @@ class RegisterView(APIView):
             if password.isspace() or name.isspace() or email.isspace():
                 return Response({"mesage" : "There must be some value for name,email,password"}, status=status.HTTP_406_NOT_ACCEPTABLE)
             data['password'] = hash_password(password)
-            usermodel = User(name=data['name'], email=data['email'], password=data['password'])
-            serializer = UserSerializer(data=data)
-            if serializer.is_valid():
-                serializer.save()
-                final_data = serializer.data
+
+            # check if user is already present or not
+            try:
+                User.objects.raw({"_id" : email}).first()
+                return Response({"message" : "user already registered"},status=status.HTTP_406_NOT_ACCEPTABLE)
+            except DoesNotExist:
+                usermodel = User(name=data['name'], email=data['email'], password=data['password'])
+                usermodel.save()
+                final_data = usermodel.serialize()
                 final_data['password'] = '*********************'
                 return  Response(final_data)
-            else:
-                return Response({"error" : "not valid"})
+
         return Response({ "message" : "Missing Values, check username, password or email!! "}, status=status.HTTP_406_NOT_ACCEPTABLE)
         
 
@@ -87,15 +90,17 @@ class LoginView(APIView):
         password = request.data.get('password')
 
         if email and password:
-            user = User.objects.filter(email=email).first()
-
-            if user is None:
-                raise AuthenticationFailed('User not found')
+            # user = User.objects.filter(email=email).first()
+            try:
+                user = User.objects.raw({"_id": email}).first()
+            except DoesNotExist:
+                return Response({ "message" : "user does not exist"}, status=status.HTTP_401_UNAUTHORIZED)
                             
                 
             hashed_password = user.password
             if not check_password(hashed_password, password):
-                raise AuthenticationFailed('Incorrest password')
+                return Response({ "message" : "Wrong Password"}, status=status.HTTP_401_UNAUTHORIZED)
+
 
 
             # token preparation
@@ -129,9 +134,7 @@ class LoginView(APIView):
                 'refresh' : refresh_token
             }
             return response
-        
-        else:
-            raise AuthenticationFailed('User not found')
+        return Response({"message" : 'User or password is not found'}, status=status.HTTP_401_UNAUTHORIZED)
 
 
 class RefreshToken(APIView):

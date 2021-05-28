@@ -1,43 +1,46 @@
-from django.db import models
+from pymodm import MongoModel, fields
+import datetime
+from pymodm.fields import ReferenceField
+from pymongo import IndexModel
+from pymongo.write_concern import WriteConcern 
 from users.models import User
-from djongo import models as mongo_model
-
-
 # Create your models here.
-class YoutubeData(models.Model):
-    video_id = models.CharField(max_length=255, primary_key=True)
-    published_date = models.DateTimeField()
-    title = models.TextField()
-    description = models.TextField()
-    actual_link = models.CharField(max_length=255)
 
-    def __str__(self):
-        return self.title
+class YoutubeData(MongoModel):
+	video_id = fields.CharField(primary_key=True)
+	published_date = fields.DateTimeField()
+	title = fields.CharField()
+	description = fields.CharField()
+	actual_link = fields.URLField()
 
-    def serialize(self):
-        return {
-            'video_id' : self.video_id,
-            'published_date' : self.published_date,
-            'title' : self.title,
-            'description' : self.description,
-            'actual_link' : self.actual_link
-        }
+	def serialize(self):
+		return {
+			"_id" : self.video_id,
+			"published_date" : self.published_date,
+			"title" : self.title,
+			"description" : self.description,
+			"actual_link" : self.actual_link
+		}
 
+	class Meta:
+		write_concern = WriteConcern(j=True)
+		connection_alias = 'manual_connection'
 
-class queryModel(mongo_model.Model):
-    user = mongo_model.EmailField()
-    query = mongo_model.CharField(max_length=255)
-    videos = mongo_model.ArrayField(
-                    model_container=YoutubeData
-                )
-    query_lasttime = mongo_model.DateTimeField(auto_now=True)
+class queryModel(MongoModel):
+	user = fields.ReferenceField(User, on_delete=ReferenceField.CASCADE)
+	query = fields.CharField()
+	videos = fields.EmbeddedDocumentListField(YoutubeData)
+	query_lasttime = fields.DateTimeField()
 
+	def serialize(self):
+		return {
+			"user" : self.user.email,
+			"query" : self.query,
+			"videos" : [video.video_id for video in self.videos ],
+			"query_lasttime" : self.query_lasttime
+		}
 
-
-    def serialize(self):
-        return {
-            'user' : self.user,
-            'query' : self.query,
-            'videos' : [video_object['video_id'] for video_object in self.videos],
-            'last_time' : self.query_lasttime
-        }
+	class Meta:
+		write_concern = WriteConcern(j=True)
+		connection_alias = 'manual_connection'
+		indexes=[IndexModel([ ('query' , 1), ('user' , 1)])]

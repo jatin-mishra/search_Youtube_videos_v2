@@ -1,18 +1,21 @@
-from django.db import models
-from django.contrib.auth.models import AbstractUser
+from pymodm import MongoModel, fields
+from pymongo.write_concern import WriteConcern 
 
 # Create your models here.
-class User(models.Model):
-    name = models.CharField(max_length=255)
-    email = models.EmailField(max_length=255, primary_key=True)
-    password = models.CharField(max_length=255)
+class User(MongoModel):
+	name = fields.CharField()
+	email = fields.EmailField(primary_key=True)
+	password = fields.CharField()
 
-    def __str__(self):
-        return f"{self.name}"
+	def serialize(self):
+		return {
+			"name":self.name,
+			"_id":self.email,
+			"password":self.password
+		}
 
-    def serialize(self):
-        return {
-            'name' : self.name,
-            'email' : self.email
-        }
+	class Meta:
+		write_concern = WriteConcern(j=True)
+		connection_alias = 'manual_connection'
+
 

@@ -4,6 +4,7 @@ from users.models import User
 from django.conf import settings
 import requests
 import datetime
+from pymodm.errors import DoesNotExist
 
 @shared_task
 def add(x=2,y=3):
@@ -35,43 +36,55 @@ def insert_into_database(recordsAsDictionary):
     all_new_videos = []
     complete_list_videos = []
     # print(f'date ')
-    current_user = User.objects.filter(email=recordsAsDictionary['user']).first()
-    for videoid in recordsAsDictionary:
-        if videoid == 'user' or videoid == 'query':
+
+    # no need to try catch, as it will always be there
+    # current_user = User.objects.raw({"_id":recordsAsDictionary['user']}).first()
+    
+    print("found user")
+    
+    for key_name in recordsAsDictionary:
+        if key_name == 'user' or key_name == 'query':
             continue
 
-        if not YoutubeData.objects.filter(video_id=videoid).exists():
+        video_id = key_name
+        try:
+            videos_instance = YoutubeData.objects.raw({ "_id": video_id}).first()
+            complete_list_videos.append(YoutubeData.objects.raw({ "_id" : video_id}).first().serialize())
+
+        except DoesNotExist:
+            print("safe")
             video_instance = YoutubeData(
-                            video_id=videoid,
-                            published_date=recordsAsDictionary[videoid]['published_at'], 
-                            title=recordsAsDictionary[videoid]['title'], 
-                            description=recordsAsDictionary[videoid]['description'], 
-                            actual_link=recordsAsDictionary[videoid]['url']
+                            video_id=video_id,
+                            published_date=recordsAsDictionary[video_id]['published_at'], 
+                            title= recordsAsDictionary[video_id]['title'] if len(recordsAsDictionary[video_id]['title']) else "no title", 
+                            description= recordsAsDictionary[video_id]['description'] if len(recordsAsDictionary[video_id]['description']) else "no description", 
+                            actual_link= recordsAsDictionary[video_id]['url'] if len(recordsAsDictionary[video_id]['url']) else "http://127.0.0.1:8000/NoUrlAvailable"
                         )
 
             video_instance.save()
             all_new_videos.append(video_instance.serialize())
-        else:
-            complete_list_videos.append(YoutubeData.objects.filter(video_id=videoid).first().serialize())
+            print(f"{video_id} inserted")
     
     print('video done')
 
     complete_list_videos.extend(all_new_videos)
-    if queryModel.objects.filter(query=recordsAsDictionary['query']).filter(user=current_user).exists():
-        query_object = queryModel.objects.select_for_update().filter(query=recordsAsDictionary['query']).filter(user=current_user).first()
-        query_object.videos = all_new_videos
-        query_object.update()
+
+    try:
+        query_object = queryModel.objects.raw({ "query" : recordsAsDictionary['query'] , "user" : recordsAsDictionary['user']}).first()
+        query_object.videos = complete_list_videos
+        query_object.save()
         print('found query with the user ohibited to prevent data loss due to unsaved related object and update it')
-    else:
-        # current_user.save()
+    except DoesNotExist:
         query_object = queryModel(
-                user=current_user, 
+                user=recordsAsDictionary['user'], 
                 query=recordsAsDictionary['query'],
                 videos=[video for video in complete_list_videos],
                 query_lasttime=datetime.datetime.now()
             )
+
+        print("query saved -> ")
         print(query_object.serialize())
-        query_object.save(force_insert=True)   
+        query_object.save()   
         print('made query inserted into dataset')     
             
     return None 
@@ -79,7 +92,7 @@ def insert_into_database(recordsAsDictionary):
     
 
 @shared_task
-def fetch_youtube_data(userdata, n = 10,query='celery videos'):
+def fetch_youtube_data(userdata, n = 10,query='celery videos', force=False):
     
     search_url = 'https://www.googleapis.com/youtube/v3/search'
     video_url = 'https://www.googleapis.com/youtube/v3/videos'
@@ -97,35 +110,57 @@ def fetch_youtube_data(userdata, n = 10,query='celery videos'):
     results  = r.json()
     records = {}
 
-    for result in results['items']:
-        video_ids.append(result['id']['videoId'])
-        video_id = result['id']['videoId']
-        y_m_d = result['snippet']['publishedAt'].split('-')
-        final_date = datetime.datetime(int(y_m_d[0]), int(y_m_d[1]), int(y_m_d[2][0:2]))
 
-        records[video_id] = {
-            'published_at' : final_date,
-            'title': result["snippet"]["title"],
-            'description' : result["snippet"]["description"]
-        }
- 
+    default_title = query
+    default_description = query
+    default_url = "http://127.0.0.1:8000/NoUrlAvailable"
 
-    video_params = {
-        'key' : settings.YOUTUBE_DATA_API_KEY,
-        'part' : 'snippet',
-        'id' : ','.join(video_ids)
-    }
+    if results.get('items'):
+        for result in results.get('items'):
+            video_ids.append(result['id']['videoId'])
+            video_id = result['id']['videoId']
+            y_m_d = result['snippet']['publishedAt'].split('-')
+            final_date = datetime.datetime(int(y_m_d[0]), int(y_m_d[1]), int(y_m_d[2][0:2]))
 
-    r = requests.get(video_url, params=video_params)
-    results = r.json()['items']
-    for result in results:
-        v_id = result['id']
-        records[v_id]['url'] = result['snippet']['thumbnails']['high']['url']
+            if result["snippet"]["title"] is None:
+                result["snippet"]["title"] = default_title
+            
+            if result["snippet"]["description"] is None:
+                result["snippet"]["description"] = default_description     
+
+            records[video_id] = {
+                'published_at' : final_date,
+                'title': result["snippet"]["title"],
+                'description' : result["snippet"]["description"]
+            }
     
-    records['query'] = query
-    records['user'] = userdata['email']
 
-    # insert_into_database(records)
-    insert_into_database.delay(records)
-    print(records)
-    return records
+        video_params = {
+            'key' : settings.YOUTUBE_DATA_API_KEY,
+            'part' : 'snippet',
+            'id' : ','.join(video_ids)
+        }
+
+        r = requests.get(video_url, params=video_params)
+        results = r.json()['items']
+        for result in results:
+            v_id = result['id']
+            if result['snippet']['thumbnails']['high']['url'] is None:
+                result['snippet']['thumbnails']['high']['url'] = default_url
+            records[v_id]['url'] = result['snippet']['thumbnails']['high']['url']
+        
+        records['query'] = query
+        records['user'] = userdata['_id']
+
+        # insert_into_database(records)
+        if not force:
+            insert_into_database.delay(records)
+        else:
+            insert_into_database(records)
+
+        
+        records.pop('user')
+        records.pop('query')
+        print(records)
+        return records
+    return {}
