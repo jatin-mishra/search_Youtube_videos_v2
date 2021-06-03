@@ -1,8 +1,0 @@
-1. searching in database: indexing on vdoids.. 
-if query specified: fetch directly {
-    check for presence
-    if not: insert
-}
-
-
-2. if we had to check its presence in database before making api call, very unefficient
