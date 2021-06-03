@@ -90,11 +90,11 @@ class bulkRegistration(APIView):
             # all_queries = [queries.lower() for queries in all_queries]
             try:
                 saved_queries = queryModel.objects.aggregate(
-						{ "$match" : {"$and" : [{ "query" : {"$in" : all_queries }},{"user" : current_user.email }]}}, 
-                        {"$sort" : { "query_lasttime" :  -1 } },
+					{ "$match" : {"$and" : [{ "query" : {"$in" : all_queries }},{"user" : current_user.email }]}}, 
+                        		{"$sort" : { "query_lasttime" :  -1 } },
 				        {"$project" : { "_id": 0, "query" : 1, "videos" : 1}},
-                        {"$skip" : offset},
-                        {"$limit" : limit+1}
+                        		{"$skip" : offset},
+                        		{"$limit" : limit+1}
 					)
 
                 
