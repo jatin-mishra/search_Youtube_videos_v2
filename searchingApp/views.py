@@ -19,6 +19,7 @@ from users.TokenManager import setValue, getValue, checkForExistence, scheduleEx
 from rest_framework.pagination import PageNumberPagination
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from pymodm.errors import DoesNotExist
+from youtubeRecords.settings import get_elastic_instance
 import pymongo
 
 
@@ -211,3 +212,82 @@ class searchingView(ListAPIView):
         # if user didnt enter query
         return Response({"error" : "query not specified"}, status=status.HTTP_400_BAD_REQUEST)
             
+
+class textSearch(APIView):
+    def get(self, request):
+        keyword = request.GET.get('keyword')
+
+        if keyword:
+            search_query = {
+                "query" : {
+                    "match" : {
+                        "title" : keyword
+                    }
+                }
+            }
+            
+            elastic_instance = get_elastic_instance()
+            response = elastic_instance.search(index='youtubevideos', body=search_query)
+
+            return Response(response, status=status.HTTP_200_OK)
+        return Response({"message" : "No keyword specified!!"}, status.HTTP_400_BAD_REQUEST)
+
+
+class videosWithDateFilter(APIView):
+    def get(self, request):
+
+        start_date = request.GET.get('start_date')
+        final_date = request.GET.get('final_date')
+
+        print(start_date)
+        try:
+            if start_date:
+                start_date = datetime.datetime.strptime(start_date,'%Y-%m-%d').date()
+            else:
+                start_date = (datetime.datetime.now() - datetime.timedelta(weeks=10)).date()
+            
+            if final_date:
+                final_date = datetime.datetime.strptime(final_date,'%Y-%m-%d').date()
+            else:
+                final_date = datetime.datetime.now().date()
+        
+        except Exception as e:
+            print(e)
+            return Response({"message" : "Date must be in yyyy-MM-dd format"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if final_date >= start_date:
+
+            search_query = {
+                "query" : {
+                    "range" : {
+                        "published_date" : {
+                            "gte" : start_date,
+                            "lte" : final_date
+                        }
+                    }
+                }
+            }
+
+            elastic_instance = get_elastic_instance()
+            response = elastic_instance.search(index='youtubevideos', body=search_query)
+            return Response(response, status=status.HTTP_200_OK)
+
+        
+        return    Response({ "error" : "final date cannt be greater than start date!!"}, status=status.HTTP_400_BAD_REQUEST)
+
+
+# PUT /youtubevideos/_mapping
+# {
+#   "properties" : {
+#     "videodetails" : {
+#       "properties" : {
+#         "title" : { "type" : "text" },
+#         "published_date" : {
+#           "type" : "date",
+#           "format" : "yyyy-MM-dd"
+#         },
+#         "RandomNumber": {"type" : "keyword" }
+#       }
+#     }
+#   }
+# }

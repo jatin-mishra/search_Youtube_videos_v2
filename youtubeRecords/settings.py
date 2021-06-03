@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 from decouple import config
+from elasticsearch import Elasticsearch
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -87,6 +88,12 @@ DATABASES = {
         'NAME': config('MONGO_DATABASE'),
     }
 }
+
+
+# elastic search instance
+es = Elasticsearch(HOST=config('ELASTIC_SEARCH_HOST'),PORT=config('ELASTIC_SEARCH_PORT'))
+def get_elastic_instance():
+    return es
 
 
 # Password validation
